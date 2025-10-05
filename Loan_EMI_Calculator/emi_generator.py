@@ -28,6 +28,9 @@ def emi_engine():
     else:
         R = r / 100
     N = int(input("Enter the Loan tenure in months: "))
+    if P == 0 or R == 0 or N == 0:
+        print("Invalid Input, P, R or N cannot be zero")
+        return None
     total_emi = calculate_emi(P, R, N)
     print(f"The Equated Monthly Installment is {total_emi:,.2f}")
     return total_emi
