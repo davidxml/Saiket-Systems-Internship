@@ -7,5 +7,6 @@ print("Enter the data carefully and accurately, we don't want errors")
 while True:
     emi_engine()
     run_again = input("Do you want to Calculate Another EMI? (yes or no): ")
+    print("\n")
     if run_again == "no".lower():
         break
