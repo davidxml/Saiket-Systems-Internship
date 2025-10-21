@@ -1,6 +1,6 @@
 import os
 from newsapi import NewsApiClient
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -66,7 +66,7 @@ except Exception as e:
 # The '/v2/everything' endpoint searches across all sources and articles.
 
 # Calculate a date range for the search (e.g., articles published in the last 7 days)
-date_to = datetime.now()
+date_to = datetime.now(timezone.utc)
 date_from = date_to - timedelta(days=7)
 
 try:
@@ -77,9 +77,11 @@ try:
     # Specific domains to search (optional)
     # domains='techcrunch.com,thenextweb.com',
     
-    # Date range in ISO 8601 format (YYYY-MM-DD)
-    from_param=date_from.isoformat(),
-    to=date_to.isoformat(),
+    # 2. Format the date range into the required string (YYYY-MM-DDTHH:MM:SS)
+    # The 'T' separates the date and time, and the 'Z' (for Zulu/UTC) is often required/helpful
+    to = date_to.strftime('%Y-%m-%dT%H:%M:%S'),
+    from_param = date_from.strftime('%Y-%m-%dT%H:%M:%S'),
+    
     
     # How to sort the results: 'relevancy', 'popularity', or 'publishedAt'
     sort_by='publishedAt',
