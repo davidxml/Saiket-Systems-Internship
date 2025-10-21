@@ -7,7 +7,6 @@ load_dotenv()
 
 # --- configuration and initialisation ---
 api_key = os.environ.get("NEWS_API_KEY")
-print(os.environ.get("NEWS_API_KEY"))
 
 if  not api_key:
     print(" Error: please update your api key with the NewsAPI key")
