@@ -16,11 +16,12 @@ newsapi = NewsApiClient(api_key=api_key)
 
 # --- API interaction: Fetching Data ---
 keyword_to_search = input("Enter the keyword to search for: ")
-category_set = input("""Which category interests you at the moment ?
-                    (e.g.business, entertainment, general, health, science, sports, technology): """)
-language_set = input("""Enter a language code (yo for Yoruba, ig for Igbo, en for English, 
-                     fr for French, zh for Chinese, ha for Hausa, ar for Arabic): """)
-country_set = input("Which country news excites best:  ")
+category_set = input("Which category interests you at the moment (e.g.business," \
+                    " entertainment, general, health, science, sports, technology): ")
+language_set = input("Enter a language code (yo for Yoruba, ig for Igbo," \
+                    " en for English, fr for French, zh for Chinese, ha for Hausa, ar for Arabic): ")
+country_set = input("Enter a country code to search (NG for Nigeria, US/GB for English-speaking," \
+                    " FR for France, CN for China, SA for Saudi Arabia): ")
 try: 
     top_headlines = newsapi.get_top_headlines(
          category = category_set,
