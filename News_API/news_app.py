@@ -1,25 +1,28 @@
 import os
 from newsapi import NewsApiClient
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
 
-# --- configuration an initialisation ---
+load_dotenv()
+
+# --- configuration and initialisation ---
 api_key = os.environ.get("NEWS_API_KEY")
+print(os.environ.get("NEWS_API_KEY"))
 
 if  not api_key:
     print(" Error: please update your api key with the NewsAPI key")
-    exit()
+    exit(1)
 
 newsapi = NewsApiClient(api_key=api_key)
 
 # --- API interaction: Fetching Data ---
 keyword_to_search = input("Enter the keyword to search for: ")
-category_set = input("Which category interests you at the moment ?(e.g., " \
-                    "business, entertainment, general, health, science, sports, technology) ")
+category_set = input("""Which category interests you at the moment ?
+                    (e.g.business, entertainment, general, health, science, sports, technology): """)
 language_set = input("Enter the language you'd love to read in: ")
 country_set = input("Which country news excites best:  ")
 try: 
     top_headlines = newsapi.get_top_headlines(
-         q = keyword_to_search,
          category = category_set,
          language = language_set,
          country = country_set
