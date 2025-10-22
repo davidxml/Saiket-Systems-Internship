@@ -1,4 +1,5 @@
 import os
+import sys
 from newsapi import NewsApiClient
 from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
@@ -9,8 +10,8 @@ load_dotenv()
 api_key = os.environ.get("NEWS_API_KEY")
 
 if  not api_key:
-    print(" Error: please update your api key with the NewsAPI key")
-    exit(1)
+    print("NEWS_API_KEY not found. Set it with: $env:NEWS_API_KEY = 'your_key' (PowerShell) or use .env and restart your terminal/IDE.")
+    sys.exit(1)
 
 newsapi = NewsApiClient(api_key=api_key)
 
