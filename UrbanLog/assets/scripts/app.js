@@ -33,7 +33,17 @@ const initApp = () => {
  */
 const createPost = () => {
     const formData = UI.getPostFormData();
-
+    const now = new Date();
+    const newpost = {
+        id: now.getTime(),
+        title: formData.title,
+        content: formData.content,
+        keyTakeaways: formData.keyTakeaways,
+        reflection: formData.reflection,
+        datelogged: now.toLocaleDateString(),
+        timelogged: now.toLocaleTimeString()
+    };
+    
     // Basic validation: ensure the main log has content
     if (!formData.title || !formData.content) {
         alert("Please provide both a Title and an entry in the Primary Log.");
