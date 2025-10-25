@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanLog: The Universal Logbook</title>
+    <link rel="stylesheet" href="assets/styles/urbanlog.css">
+</head>
+<body>
+
+    <header>
+        <h1>UrbanLog: The Universal Logbook</h1>
+        <button id="mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        
+        <section id="writing-panel">
+            <h2>New Entry</h2>
+            <form id="post-form">
+                
+                <input type="text" id="post-title" placeholder="Title: Date, Topic, or Meeting Summary..." required>
+
+                <div class="writing-panes-container">
+                    <div class="pane main-log-pane">
+                        <h3>1. Primary Log / Narrative</h3>
+                        <textarea id="main-log" placeholder="Detailed report, summary of the day, or lecture notes..." rows="12" required></textarea>
+                    </div>
+
+                    <div class="pane side-panes-group">
+                        <div class="side-pane">
+                            <h3>2. Key Takeaways / Action Items</h3>
+                            <textarea id="key-takeaways" placeholder="Critical notes, tasks for tomorrow, or core data points." rows="5"></textarea>
+                        </div>
+                        <div class="side-pane">
+                            <h3>3. Personal Reflection / AAR</h3>
+                            <textarea id="daily-reflection" placeholder="Analysis of the day, emotional state, or lessons learned." rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Save Entry to Log</button>
+            </form>
+        </section>
+
+        <section id="log-history">
+            <h2>Archived Entries</h2>
+            <div id="posts-container">
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UrbanLabs. All rights reserved.</p>
+    </footer>
+    <script type="module" src="assets/scripts/services/storage.js"></script>
+    <script type="module" src="assets/scripts/components/ui.js"></script>
+    <script type="module" src="assets/scripts/components/postForm.js"></script>
+    <script type="module" src="assets/scripts/app.js"></script>
+</body>
+</html>
