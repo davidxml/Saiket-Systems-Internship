@@ -50,10 +50,15 @@ const createPostCard = (post) => {
     return `
         <div class="post-card" data-post-id="${post.id}">
             <h3>${post.title}</h3>
+            <div class="log-metadata">
+                <span style="font-style: italic; font-size: 0.9em; color: var(--color-text-muted);">
+                    Logged: ${post.dateLogged} at ${post.timeLogged}
+                </span>
+            </div>
             ${renderSection('Narrative', post.content)}
             ${renderSection('Key Takeaways', post.keyTakeaways)}
             ${renderSection('Reflection', post.reflection)}
-            <p style="font-size: 0.8em; color: #888;">Logged at: ${new Date(post.id).toLocaleString()}</p>
+            
             <button class="delete-btn" data-id="${post.id}">Delete Entry</button>
         </div>
     `;
