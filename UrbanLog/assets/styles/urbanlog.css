@@ -7,7 +7,7 @@
     --color-border: #ddd;
     --color-action-primary: #007bff;
     --color-action-danger: #dc3545;
-    --color-line-mark: #f0dfdf;
+    --color-line-mark: #090808;
 }
 
 /* --- Dark Mode Variables (Activated via the 'dark-mode' class on the body) --- */
@@ -18,6 +18,7 @@ body.dark-mode {
     --color-border: #444;
     --color-action-primary: #75b7ff; /* Lighter blue for visibility */
     --color-action-danger: #ff6b6b;
+    --color-line-mark: #fbf5f5;
 }
 
 /* --- Global Styles --- */
@@ -220,4 +221,62 @@ footer {
 footer p {
     color: #888; /* Muted color for copyright text */
     font-size: 0.85em;
+}
+
+#view-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.view-btn {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.view-btn.active {
+    background-color: var(--color-action-primary);
+    color: white;
+    border-color: var(--color-action-primary);
+}
+
+.view-btn:hover:not(.active) {
+    background-color: var(--color-bg-primary);
+}
+
+/* Style for action buttons inside the post card */
+.post-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    background-color: #6c757d; /* Muted gray for secondary actions */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Re-target the delete button for clarity within the card */
+.delete-btn {
+    /* Existing styles remain for danger action */
+    background-color: var(--color-action-danger);
+    /* ... (other styles) */
 }
