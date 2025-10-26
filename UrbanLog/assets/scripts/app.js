@@ -201,6 +201,10 @@ const toggleTheme = () => {
 const initApp = () => {
     // 1. Load Data and Theme
     posts = Storage.getPosts();
+    posts = posts.map(post => ({
+        ...post,
+        status: post.status || 'active' 
+    }))
     currentTheme = Storage.getThemePreference(); // This includes the system preference check
 
     // 2. Apply Theme
