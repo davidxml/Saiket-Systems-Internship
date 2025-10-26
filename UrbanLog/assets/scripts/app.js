@@ -9,6 +9,8 @@ import * as PostForm from '../components/postForm.js';
 let posts = [];
 let currentTheme;
 let currentView = 'active'; // Initialize current view to 'active'
+let searchTerm = ''; // State for search keyword
+let searchCategory = 'all'; // State for search field
 
 // --- Utility and Orchestration Functions ---
 

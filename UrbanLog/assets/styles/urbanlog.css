@@ -280,3 +280,37 @@ footer p {
     background-color: var(--color-action-danger);
     /* ... (other styles) */
 }
+
+#search-filter-panel {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+#category-filter {
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    cursor: pointer;
+}
+
+/* Responsive adjustment for search */
+@media (max-width: 600px) {
+    #search-filter-panel {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
