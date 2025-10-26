@@ -114,7 +114,7 @@ textarea {
     repeating-linear-gradient(
         to bottom,
         transparent,
-        transparent calc(1.5em - 1px)
+        transparent calc(1.5em - 1px),
         var(--color-line-mark) calc (1.5em - 1px),
         var(--color-line-mark) 1.5em 
     );
