@@ -8,7 +8,8 @@ const mainLogInput = document.getElementById('main-log');
 const keyTakeawaysInput = document.getElementById('key-takeaways');
 const dailyReflectionInput = document.getElementById('daily-reflection');
 const modeToggleButton = document.getElementById('mode-toggle');
-
+const searchInput = document.getElementById('search-input'); 
+const categoryFilter = document.getElementById('category-filter');
 /**
  * Reads the values from the post creation form.
  * @returns {object} An object containing the four data fields.
@@ -95,6 +96,26 @@ export const renderPosts = (posts, deleteHandler) => {
 };
 
 /**
+ * Initializes listeners for the search input and category filter.
+ * @param {function} updateTermHandler - Handler to update the search term in app.js.
+ * @param {function} updateCategoryHandler - Handler to update the search category in app.js.
+ */
+
+export const initSearch = (updateTermHandler, updateCategoryHandler) => {
+    // Listen for keyup events on the search bar
+    searchInput.addEventListener('keyup', (event) => {
+        updateTermHandler(event.target.value);
+    });
+
+    // Listen for change events on the category selector
+    categoryFilter.addEventListener('change', (event) => {
+        updateCategoryHandler(event.target.value);
+    });
+};
+export const clearSearchInput = () => {
+    searchInput.value = ''; // Clears the search 
+};
+/**
  * Attaches the event listener to the mode toggle button.
  * @param {function} toggleHandler - The function from app.js to handle the theme change.
  */
@@ -115,3 +136,4 @@ export const applyTheme = (theme) => {
         modeToggleButton.textContent = 'Toggle Dark Mode';
     }
 };
+
