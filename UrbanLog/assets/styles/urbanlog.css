@@ -7,6 +7,7 @@
     --color-border: #ddd;
     --color-action-primary: #007bff;
     --color-action-danger: #dc3545;
+    --color-line-mark: #f0dfdf;
 }
 
 /* --- Dark Mode Variables (Activated via the 'dark-mode' class on the body) --- */
