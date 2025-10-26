@@ -33,8 +33,21 @@ export const savePosts = (posts) => {
  * Gets the user's preferred theme (dark or light) from Local Storage.
  * @returns {string} 'dark' or 'light'. Defaults to 'light'.
  */
+
 export const getThemePreference = () => {
-    return localStorage.getItem(THEME_KEY) || 'light';
+    // Check localStorage first
+    const savedTheme = localStorage.getItem(THEME_KEY);
+    if (savedTheme) {
+        return savedTheme;
+    }
+    
+    // NEW: If no theme is saved, check system preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+    }
+    
+    // Default to 'light'
+    return 'light';
 };
 
 /**
