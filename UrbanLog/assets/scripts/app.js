@@ -97,10 +97,7 @@ const switchView = (view) => {
  * Updates the search term and re-renders the list.
  * @param {string} term - The text input from the search bar.
  */
-const updateSearchTerm = (term) => {
-    searchTerm = term;
-    saveAndRender();
-};
+
 
 /**
  * Updates the search category and re-renders the list.
@@ -223,6 +220,20 @@ const initApp = () => {
 
     console.log("UrbanLog Initialized. Posts loaded:", posts.length);
 };
+
+/**
+ * Updates the search term and re-renders the list.
+ * @param {string} term - The text input from the search bar.
+ */
+
+let searchTimeout;
+const updateSearchTerm = (term) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        searchTerm = term;
+        saveAndRender();
+    }, 300);
+}
 
 
 // Start the application when the script loads
