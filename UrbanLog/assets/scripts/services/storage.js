@@ -25,8 +25,12 @@ export const getPosts = () => {
  * @param {Array} posts - The array of post objects to save.
  */
 export const savePosts = (posts) => {
-    const postsJSON = JSON.stringify(posts);
-    localStorage.setItem(STORAGE_KEY, postsJSON);
+    try {
+        const postsJSON = JSON.stringify(posts);
+        localStorage.setItem(STORAGE_KEY, postsJSON);
+    } catch (e) {
+        console.error("Error saving posts to Local Storage:", e);
+    }
 };
 
 /**
