@@ -111,13 +111,13 @@ textarea {
     line-height: 1.5;
     background-attachment: local;
     background-image: 
-    repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent calc(1.5em - 1px),
-        var(--color-line-mark) calc (1.5em - 1px),
-        var(--color-line-mark) 1.5em 
-    );
+        repeating-linear-gradient(
+            to bottom,
+            transparent,
+            transparent calc(1.5em - 1px),
+            var(--color-line-mark) calc (1.5em - 1px),
+            var(--color-line-mark) 1.5em 
+        );
 }
 
 /* Consistent styling for headers */
