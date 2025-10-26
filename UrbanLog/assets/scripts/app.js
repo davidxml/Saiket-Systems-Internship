@@ -8,85 +8,120 @@ import * as PostForm from '../components/postForm.js';
 // Application State
 let posts = [];
 let currentTheme;
+let currentView = 'active'; // Initialize current view to 'active'
+
+// --- Utility and Orchestration Functions ---
 
 /**
- * Main application initialization function.
+ * Filters the main posts array based on the current view state.
+ * @returns {Array} The filtered list of posts to display.
  */
-const initApp = () => {
-    // 1. Load Data and Theme
-    posts = Storage.getPosts();
-    currentTheme = Storage.getThemePreference();
-
-    // 2. Apply Theme
-    UI.applyTheme(currentTheme);
-    
-    // 3. Initialize Components
-    UI.renderPosts(posts, deletePost); // Renders initial posts and passes the delete handler
-    PostForm.initForm(createPost);     // Initializes form listener and passes the creation handler
-    UI.initThemeToggle(toggleTheme);   // Initializes theme toggle button
-
-    console.log("UrbanLog Initialized. Posts loaded:", posts.length);
+const getFilteredPosts = () => {
+    return posts.filter(post => {
+        // Use a default status of 'active' for older posts without a status
+        const status = post.status || 'active';
+        
+        if (currentView === 'active') {
+            return status === 'active';
+        } else if (currentView === 'trash') {
+            return status === 'deleted';
+        } else if (currentView === 'archive') {
+            return status === 'archived';
+        }
+        return false;
+    });
 };
+
+/**
+ * Saves the current state of posts to local storage and refreshes the UI.
+ */
+const saveAndRender = () => {
+    Storage.savePosts(posts);
+    const postsToDisplay = getFilteredPosts();
+    // Pass the necessary handlers and the current view to the UI component
+    UI.renderPosts(postsToDisplay, deletePost, changePostStatus, currentView); 
+};
+
+/**
+ * Function to switch the application view (Active, Archive, Trash).
+ * @param {string} view - 'active', 'trash', or 'archive'.
+ */
+const switchView = (view) => {
+    currentView = view;
+    saveAndRender();
+    UI.updateViewButtons(currentView);
+};
+
+// --- CRUD & Theme Handlers ---
 
 /**
  * Handles the creation of a new post.
  */
 const createPost = () => {
     const formData = UI.getPostFormData();
-    const now = new Date();
-    const newpost = {
-        id: now.getTime(),
-        title: formData.title,
-        content: formData.content,
-        keyTakeaways: formData.keyTakeaways,
-        reflection: formData.reflection,
-        datelogged: now.toLocaleDateString(),
-        timelogged: now.toLocaleTimeString()
-    };
-    
+
     // Basic validation: ensure the main log has content
     if (!formData.title || !formData.content) {
         alert("Please provide both a Title and an entry in the Primary Log.");
         return;
     }
 
-    // 1. Create the new post object
+    const now = new Date();
+    
+    // 1. Create the new post object with ALL fields and auto-logged data/status
     const newPost = {
-        // Use the current timestamp as a simple, unique ID
-        id: Date.now(), 
+        id: now.getTime(), 
         title: formData.title,
         content: formData.content,
         keyTakeaways: formData.keyTakeaways,
-        reflection: formData.reflection
+        reflection: formData.reflection,
+        dateLogged: now.toLocaleDateString(),
+        timeLogged: now.toLocaleTimeString(),
+        status: 'active' // All new posts start as 'active'
     };
 
     // 2. Update state and persistence
     posts.push(newPost);
-    Storage.savePosts(posts);
-
-    // 3. Update UI
-    UI.renderPosts(posts, deletePost);
     UI.clearForm();
+
+    // Ensure we switch back to the active log view after creating a new post
+    if (currentView !== 'active') {
+        switchView('active');
+    } else {
+        saveAndRender();
+    }
+};
+
+
+/**
+ * Handles the initial soft deletion (move to trash).
+ * NOTE: This replaces the old simple deletePost logic.
+ * @param {number} postId - The ID of the post to move to trash.
+ */
+const deletePost = (postId) => {
+    changePostStatus(postId, 'deleted');
 };
 
 /**
- * Handles the deletion of a specific post.
- * @param {number} postIdToDelete - The unique ID of the post to delete.
+ * Handles changing the status of a post (soft delete, archive, restore) or permanent deletion.
+ * @param {number} postId - The ID of the post to update.
+ * @param {string} newStatus - The target status ('active', 'deleted', 'archived', or 'permanent-delete').
  */
-const deletePost = (postIdToDelete) => {
-    if (!confirm("Are you sure you want to delete this log entry? This action cannot be undone.")) {
-        return; // User cancelled deletion
-    }
-    
-    // 1. Update state: Filter out the post with the matching ID
-    // We parse the ID to ensure strict comparison works
-    posts = posts.filter(post => post.id !== postIdToDelete); 
-    
-    // 2. Update persistence
-    Storage.savePosts(posts);
+const changePostStatus = (postId, newStatus) => {
+    const postIndex = posts.findIndex(p => p.id === postId);
 
-    // 3. Update UI
-    UI.renderPosts(posts, deletePost);
+    if (postIndex === -1) return;
+
+    if (newStatus === 'permanent-delete') {
+        // PERMANENT DELETION: Filter post out of the array
+        if (!confirm("WARNING: Are you sure you want to permanently delete this entry? This action cannot be undone.")) return;
+        posts.splice(postIndex, 1);
+    } else {
+        // SOFT STATUS CHANGE (Active, Deleted, or Archived)
+        posts[postIndex].status = newStatus;
+    }
+
+    saveAndRender();
 };
 
 /**
@@ -96,6 +131,31 @@ const toggleTheme = () => {
     currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
     Storage.saveThemePreference(currentTheme);
     UI.applyTheme(currentTheme);
+};
+
+// --- Initialization ---
+
+/**
+ * Main application initialization function.
+ */
+const initApp = () => {
+    // 1. Load Data and Theme
+    posts = Storage.getPosts();
+    currentTheme = Storage.getThemePreference(); // This includes the system preference check
+
+    // 2. Apply Theme
+    UI.applyTheme(currentTheme);
+    
+    // 3. Initialize Components
+    UI.initViewButtons(switchView);   // Initializes view buttons and passes the switchView handler
+    UI.updateViewButtons(currentView); // Set the initial button state
+    
+    saveAndRender();                  // Renders initial filtered posts
+
+    PostForm.initForm(createPost); 
+    UI.initThemeToggle(toggleTheme);  
+
+    console.log("UrbanLog Initialized. Posts loaded:", posts.length);
 };
 
 
