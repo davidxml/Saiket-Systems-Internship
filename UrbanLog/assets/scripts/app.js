@@ -15,11 +15,12 @@ let searchCategory = 'all'; // State for search field
 // --- Utility and Orchestration Functions ---
 
 /**
- * Filters the main posts array based on the current view state.
+ * Filters the main posts array based on the current view state AND search criteria.
  * @returns {Array} The filtered list of posts to display.
  */
 const getFilteredPosts = () => {
-    return posts.filter(post => {
+    // 1. Filter by Status (Active, Trash, Archive)
+    let filteredByStatus = posts.filter(post => {
         // Use a default status of 'active' for older posts without a status
         const status = post.status || 'active';
         
@@ -31,6 +32,40 @@ const getFilteredPosts = () => {
             return status === 'archived';
         }
         return false;
+    });
+
+    // 2. Filter by Search Term and Category
+    if (!searchTerm) {
+        return filteredByStatus; // If no search term, return only status-filtered posts
+    }
+
+    const lowerCaseSearch = searchTerm.toLowerCase();
+
+    return filteredByStatus.filter(post => {
+        let fieldsToSearch = [];
+
+        // Determine which fields to search based on category
+        if (searchCategory === 'all') {
+            // Search all main content fields
+            fieldsToSearch = [post.title, post.content, post.keyTakeaways, post.reflection];
+        } else if (searchCategory === 'content') {
+            fieldsToSearch = [post.content];
+        } else if (searchCategory === 'keyTakeaways') {
+            fieldsToSearch = [post.keyTakeaways];
+        } else if (searchCategory === 'reflection') {
+            fieldsToSearch = [post.reflection];
+        }
+
+        // IMPORTANT CORRECTION: If searching a specific section (not 'all'), we still want to include the title for context.
+        // The original logic for specific section search was overly complicated. Let's simplify:
+        if (searchCategory !== 'all') {
+            // If we are searching a specific text field, only search that one field.
+            // If we want to include the title, we must explicitly add it back here:
+            // fieldsToSearch.push(post.title); // Decided to exclude title for focused section search to allow better filtering.
+        }
+        
+        // Check if the search term exists in any of the chosen fields
+        return fieldsToSearch.some(field => field && field.toLowerCase().includes(lowerCaseSearch));
     });
 };
 
@@ -50,9 +85,32 @@ const saveAndRender = () => {
  */
 const switchView = (view) => {
     currentView = view;
+    // Clear search when switching views to prevent unexpected filtering
+    searchTerm = '';
+    UI.clearSearchInput(); // We will add this helper to ui.js
+    
     saveAndRender();
     UI.updateViewButtons(currentView);
 };
+
+/**
+ * Updates the search term and re-renders the list.
+ * @param {string} term - The text input from the search bar.
+ */
+const updateSearchTerm = (term) => {
+    searchTerm = term;
+    saveAndRender();
+};
+
+/**
+ * Updates the search category and re-renders the list.
+ * @param {string} category - The selected field from the dropdown.
+ */
+const updateSearchCategory = (category) => {
+    searchCategory = category;
+    saveAndRender();
+};
+
 
 // --- CRUD & Theme Handlers ---
 
@@ -150,6 +208,8 @@ const initApp = () => {
     
     // 3. Initialize Components
     UI.initViewButtons(switchView);   // Initializes view buttons and passes the switchView handler
+    UI.initSearch(updateSearchTerm, updateSearchCategory); // Initialize search listeners
+    
     UI.updateViewButtons(currentView); // Set the initial button state
     
     saveAndRender();                  // Renders initial filtered posts
