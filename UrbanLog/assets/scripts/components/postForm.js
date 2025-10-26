@@ -13,3 +13,17 @@ export const initForm = (createPostHandler) => {
         createPostHandler();    // Call the main logic function
     });
 };
+export const validateFormData = (formData) => {
+    const errors = {};
+    if (!formData.title.trim()) {
+        errors.title = 'Title is required';
+    }
+    if (!formData.content.trim()) {
+        errors.content = 'Main content is required';
+    }
+    return {
+        isValid: Object.keys(errors).length === 0,
+        errors
+    }
+
+}
