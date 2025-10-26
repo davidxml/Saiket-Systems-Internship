@@ -38,6 +38,11 @@ export const clearForm = () => {
  * @param {object} post - The post object.
  * @returns {string} The HTML markup for the post.
  */
+const sanitizeInput = (str) => {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+};
 const createPostCard = (post) => {
     // Helper function to render a section only if content exists
     const renderSection = (heading, content) => {
@@ -49,8 +54,8 @@ const createPostCard = (post) => {
     };
 
     return `
-        <div class="post-card" data-post-id="${post.id}">
-            <h3>${post.title}</h3>
+        <div class="post-card" data-post-id="${sanitizeInput(post.id.toString())}">
+            <h3>${sanitizeInput(post.title)}</h3>
             <div class="log-metadata">
                 <span style="font-style: italic; font-size: 0.9em; color: var(--color-text-muted);">
                     Logged: ${post.dateLogged} at ${post.timeLogged}
