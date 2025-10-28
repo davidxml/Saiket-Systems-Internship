@@ -210,32 +210,50 @@ const toggleTheme = () => {
  * Main application initialization function.
  */
 const initApp = () => {
-    // 1. Load Data and Theme
-    posts = Storage.getPosts();
-    posts = posts.map(post => ({
-        ...post,
-        status: post.status || 'active' 
-    }))
-    currentTheme = Storage.getThemePreference(); // This includes the system preference check
+    try {
+        // 1. Load Data and Theme
+        posts = Storage.getPosts();
+        posts = posts.map(post => ({
+            ...post,
+            status: post.status || 'active' 
+        }));
 
-    // 2. Apply Theme
-    UI.applyTheme(currentTheme);
-    
-    // 3. Initialize Components
-    UI.initViewButtons(switchView);   // Initializes view buttons and passes the switchView handler
-    UI.initSearch(updateSearchTerm, updateSearchCategory); // Initialize search listeners
-    
-    UI.updateViewButtons(currentView); // Set the initial button state
-    
-    saveAndRender();                  // Renders initial filtered posts
+        // 2. Set up theme
+        currentTheme = Storage.getThemePreference();
+        UI.applyTheme(currentTheme);
+        
+        // 3. Initialize Components with Error Handling
+        UI.initViewButtons(switchView);
+        UI.initSearch(updateSearchTerm, updateSearchCategory);
+        UI.updateViewButtons(currentView);
+        PostForm.initForm(createPost);
+        UI.initThemeToggle(toggleTheme);
+        
+        // 4. Initial Render
+        saveAndRender();
 
-    PostForm.initForm(createPost); 
-    UI.initThemeToggle(toggleTheme);  
+        // 5. Add System Theme Change Listener
+        window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+            if (!localStorage.getItem('urbanLogTheme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                UI.applyTheme(currentTheme);
+            }
+        });
 
-    console.log("UrbanLog Initialized. Posts loaded:", posts.length);
-};
-
-/**
+        console.log("UrbanLog Initialized Successfully:", {
+            postsLoaded: posts.length,
+            currentTheme,
+            currentView
+        });
+    } catch (error) {
+        console.error("Error initializing UrbanLog:", error);
+        // Show user-friendly error message
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'error-message';
+        errorMsg.textContent = 'Unable to initialize UrbanLog. Please refresh the page.';
+        document.body.insertBefore(errorMsg, document.body.firstChild);
+    }
+};/**
  * Updates the search term and re-renders the list.
  * @param {string} term - The text input from the search bar.
  */
