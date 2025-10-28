@@ -120,6 +120,43 @@ export const initSearch = (updateTermHandler, updateCategoryHandler) => {
 export const clearSearchInput = () => {
     searchInput.value = ''; // Clears the search 
 };
+
+/**
+ * Initializes the view navigation buttons (Active / Archive / Trash).
+ * @param {function} switchViewHandler - Function from app.js to switch views.
+ */
+export const initViewButtons = (switchViewHandler) => {
+    const viewButtons = document.querySelectorAll('.view-btn');
+    if (!viewButtons || viewButtons.length === 0) {
+        console.warn('View buttons not found in DOM');
+        return;
+    }
+
+    viewButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const view = btn.dataset.view;
+            if (view && typeof switchViewHandler === 'function') {
+                switchViewHandler(view);
+            }
+        });
+    });
+};
+
+/**
+ * Updates the visual state of the view buttons to reflect the currently selected view.
+ * @param {string} currentView - 'active' | 'archive' | 'trash'
+ */
+export const updateViewButtons = (currentView) => {
+    const viewButtons = document.querySelectorAll('.view-btn');
+    viewButtons.forEach(btn => {
+        if (btn.dataset.view === currentView) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+};
 /**
  * Attaches the event listener to the mode toggle button.
  * @param {function} toggleHandler - The function from app.js to handle the theme change.
