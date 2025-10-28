@@ -67,9 +67,18 @@
     <footer>
         <p>&copy; 2025 UrbanLabs. All rights reserved.</p>
     </footer>
-    <script type="module" src="assets/scripts/services/storage.js"></script>
-    <script type="module" src="assets/scripts/components/ui.js"></script>
-    <script type="module" src="assets/scripts/components/postForm.js"></script>
+    <!-- Load scripts with defer to ensure DOM is ready -->
     <script type="module" src="assets/scripts/app.js"></script>
+    
+    <!-- Add error handling for script loading -->
+    <script>
+        window.addEventListener('error', function(event) {
+            console.error('Script loading error:', event.error);
+            // Show user-friendly error message
+            if (document.readyState === 'complete') {
+                alert('There was an error loading the application. Please refresh the page.');
+            }
+        });
+    </script>
 </body>
 </html>
