@@ -39,19 +39,24 @@ export const savePosts = (posts) => {
  */
 
 export const getThemePreference = () => {
-    // Check localStorage first
-    const savedTheme = localStorage.getItem(THEME_KEY);
-    if (savedTheme) {
-        return savedTheme;
+    try {
+        // Check localStorage first
+        const savedTheme = localStorage.getItem(THEME_KEY);
+        if (savedTheme && (savedTheme === 'dark' || savedTheme === 'light')) {
+            return savedTheme;
+        }
+        
+        // If no valid theme is saved, check system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        
+        // Default to 'light'
+        return 'light';
+    } catch (error) {
+        console.error('Error getting theme preference:', error);
+        return 'light'; // Fallback to light theme
     }
-    
-    // NEW: If no theme is saved, check system preference
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-    }
-    
-    // Default to 'light'
-    return 'light';
 };
 
 /**

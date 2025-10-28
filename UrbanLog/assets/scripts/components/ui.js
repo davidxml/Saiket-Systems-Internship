@@ -133,12 +133,23 @@ export const initThemeToggle = (toggleHandler) => {
  * @param {string} theme - The current theme ('dark' or 'light').
  */
 export const applyTheme = (theme) => {
-    if (theme === 'dark') {
-        document.body.classList.add('dark-mode');
-        modeToggleButton.textContent = 'Toggle Light Mode';
-    } else {
-        document.body.classList.remove('dark-mode');
-        modeToggleButton.textContent = 'Toggle Dark Mode';
+    try {
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+            if (modeToggleButton) {
+                modeToggleButton.textContent = '☀️ Light Mode';
+                modeToggleButton.setAttribute('aria-label', 'Switch to light mode');
+            }
+        } else {
+            document.body.classList.remove('dark-mode');
+            if (modeToggleButton) {
+                modeToggleButton.textContent = '🌙 Dark Mode';
+                modeToggleButton.setAttribute('aria-label', 'Switch to dark mode');
+            }
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+    } catch (error) {
+        console.error('Error applying theme:', error);
     }
 };
 

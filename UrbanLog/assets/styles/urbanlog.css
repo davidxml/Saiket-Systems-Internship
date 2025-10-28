@@ -4,10 +4,23 @@
     --color-bg-primary: #f4f4f9;
     --color-bg-secondary: #ffffff;
     --color-text-primary: #333;
+    --color-text-muted: #666;
     --color-border: #ddd;
     --color-action-primary: #007bff;
+    --color-action-hover: #0056b3;
     --color-action-danger: #dc3545;
     --color-line-mark: #090808;
+    
+    /* Spacing and Layout */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    
+    /* Transitions */
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
 }
 
 /* --- Dark Mode Variables (Activated via the 'dark-mode' class on the body) --- */
