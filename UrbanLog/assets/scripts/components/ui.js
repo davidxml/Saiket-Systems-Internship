@@ -125,7 +125,31 @@ export const clearSearchInput = () => {
  * @param {function} toggleHandler - The function from app.js to handle the theme change.
  */
 export const initThemeToggle = (toggleHandler) => {
-    modeToggleButton.addEventListener('click', toggleHandler);
+    if (!modeToggleButton) {
+        console.error('Theme toggle button not found');
+        return;
+    }
+
+    // Add click handler
+    modeToggleButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        toggleHandler();
+    });
+
+    // Listen for theme changes from other sources
+    window.addEventListener('themeChanged', (event) => {
+        applyTheme(event.detail.theme);
+    });
+
+    // Also listen for system preference changes
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            // Only react to system changes if no user preference is stored
+            if (!localStorage.getItem('urbanLogTheme')) {
+                toggleHandler();
+            }
+        });
+    }
 };
 
 /**
