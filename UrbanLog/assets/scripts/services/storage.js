@@ -64,5 +64,18 @@ export const getThemePreference = () => {
  * @param {string} theme - 'dark' or 'light'.
  */
 export const saveThemePreference = (theme) => {
-    localStorage.setItem(THEME_KEY, theme);
+    try {
+        if (theme !== 'dark' && theme !== 'light') {
+            throw new Error('Invalid theme value');
+        }
+        localStorage.setItem(THEME_KEY, theme);
+        
+        // Dispatch an event so other parts of the app can react
+        window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme } }));
+        
+        return true;
+    } catch (error) {
+        console.error('Error saving theme preference:', error);
+        return false;
+    }
 };
