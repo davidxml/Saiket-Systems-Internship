@@ -185,9 +185,23 @@ const changePostStatus = (postId, newStatus) => {
  * Handles toggling the theme between dark and light mode.
  */
 const toggleTheme = () => {
-    currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    Storage.saveThemePreference(currentTheme);
-    UI.applyTheme(currentTheme);
+    try {
+        // Toggle the theme
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        // Save the new preference
+        Storage.saveThemePreference(currentTheme);
+        
+        // Apply the theme change
+        UI.applyTheme(currentTheme);
+        
+        // Log success
+        console.log('Theme switched to:', currentTheme);
+    } catch (error) {
+        console.error('Error toggling theme:', error);
+        // Revert if there was an error
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    }
 };
 
 // --- Initialization ---
