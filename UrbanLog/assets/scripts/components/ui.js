@@ -1,5 +1,3 @@
-// ui.js - Handles all DOM manipulation: reading data from the form and rendering posts.
-
 // Get all necessary DOM elements
 const postForm = document.getElementById('post-form');
 const postsContainer = document.getElementById('posts-container');
@@ -10,6 +8,11 @@ const dailyReflectionInput = document.getElementById('daily-reflection');
 const modeToggleButton = document.getElementById('mode-toggle');
 const searchInput = document.getElementById('search-input'); 
 const categoryFilter = document.getElementById('category-filter');
+
+// *** FIX: Added selectors for new button and dynamic title ***
+const searchButton = document.getElementById('search-btn');
+const logHistoryTitle = document.getElementById('log-history-title');
+
 /**
  * Reads the values from the post creation form.
  * @returns {object} An object containing the four data fields.
@@ -56,17 +59,17 @@ const createPostCard = (post, currentView = 'active') => {
     let actionsHtml = '';
     if (currentView === 'active') {
         actionsHtml = `
-            <button class="archive-btn" data-id="${post.id}">Archive</button>
+            <button class="archive-btn action-btn" data-id="${post.id}">Archive</button>
             <button class="delete-btn" data-id="${post.id}">Move to Trash</button>
         `;
     } else if (currentView === 'archive') {
         actionsHtml = `
-            <button class="restore-btn" data-id="${post.id}">Restore</button>
+            <button class="restore-btn action-btn" data-id="${post.id}">Restore</button>
             <button class="perma-delete-btn" data-id="${post.id}">Delete Permanently</button>
         `;
     } else if (currentView === 'trash') {
         actionsHtml = `
-            <button class="restore-btn" data-id="${post.id}">Restore</button>
+            <button class="restore-btn action-btn" data-id="${post.id}">Restore</button>
             <button class="perma-delete-btn" data-id="${post.id}">Delete Permanently</button>
         `;
     }
@@ -145,23 +148,24 @@ export const renderPosts = (posts, deleteHandler, changeStatusHandler, currentVi
     });
 };
 
+// *** FIX: Rewrote initSearch to use the button and a single handler ***
 /**
- * Initializes listeners for the search input and category filter.
- * @param {function} updateTermHandler - Handler to update the search term in app.js.
- * @param {function} updateCategoryHandler - Handler to update the search category in app.js.
+ * Initializes listeners for the search button.
+ * @param {function} searchHandler - Handler to call when search button is clicked.
  */
+export const initSearch = (searchHandler) => {
+    if (!searchButton || !searchInput || !categoryFilter) {
+        console.error("Search components not found in DOM");
+        return;
+    }
 
-export const initSearch = (updateTermHandler, updateCategoryHandler) => {
-    // Listen for keyup events on the search bar
-    searchInput.addEventListener('keyup', (event) => {
-        updateTermHandler(event.target.value);
-    });
-
-    // Listen for change events on the category selector
-    categoryFilter.addEventListener('change', (event) => {
-        updateCategoryHandler(event.target.value);
+    // Listen for click events on the search button
+    searchButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent form submission if it's in a form
+        searchHandler(searchInput.value, categoryFilter.value);
     });
 };
+
 export const clearSearchInput = () => {
     searchInput.value = ''; // Clears the search 
 };
@@ -202,6 +206,30 @@ export const updateViewButtons = (currentView) => {
         }
     });
 };
+
+// *** FIX: Added function to update the log history title ***
+/**
+ * Updates the H2 title for the log history section.
+ * @param {string} currentView - 'active' | 'archive' | 'trash'
+ */
+export const updateLogHistoryTitle = (currentView) => {
+    if (!logHistoryTitle) return;
+
+    switch (currentView) {
+        case 'active':
+            logHistoryTitle.textContent = 'Active Log';
+            break;
+        case 'archive':
+            logHistoryTitle.textContent = 'Archived Entries';
+            break;
+        case 'trash':
+            logHistoryTitle.textContent = 'Trash';
+            break;
+        default:
+            logHistoryTitle.textContent = 'Log Entries';
+    }
+};
+
 /**
  * Attaches the event listener to the mode toggle button.
  * @param {function} toggleHandler - The function from app.js to handle the theme change.
@@ -258,4 +286,3 @@ export const applyTheme = (theme) => {
         console.error('Error applying theme:', error);
     }
 };
-
