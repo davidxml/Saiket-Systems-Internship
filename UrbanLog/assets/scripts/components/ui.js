@@ -43,7 +43,7 @@ const sanitizeInput = (str) => {
     div.textContent = str;
     return div.innerHTML;
 };
-const createPostCard = (post) => {
+const createPostCard = (post, currentView = 'active') => {
     // Helper function to render a section only if content exists
     const renderSection = (heading, content) => {
         if (!content) return '';
@@ -52,7 +52,24 @@ const createPostCard = (post) => {
             <p>${content}</p>
         `;
     };
-
+    // Build action buttons based on the current view
+    let actionsHtml = '';
+    if (currentView === 'active') {
+        actionsHtml = `
+            <button class="archive-btn" data-id="${post.id}">Archive</button>
+            <button class="delete-btn" data-id="${post.id}">Move to Trash</button>
+        `;
+    } else if (currentView === 'archive') {
+        actionsHtml = `
+            <button class="restore-btn" data-id="${post.id}">Restore</button>
+            <button class="perma-delete-btn" data-id="${post.id}">Delete Permanently</button>
+        `;
+    } else if (currentView === 'trash') {
+        actionsHtml = `
+            <button class="restore-btn" data-id="${post.id}">Restore</button>
+            <button class="perma-delete-btn" data-id="${post.id}">Delete Permanently</button>
+        `;
+    }
     return `
         <div class="post-card" data-post-id="${sanitizeInput(post.id.toString())}">
             <h3>${sanitizeInput(post.title)}</h3>
@@ -65,7 +82,9 @@ const createPostCard = (post) => {
             ${renderSection('Key Takeaways', post.keyTakeaways)}
             ${renderSection('Reflection', post.reflection)}
             
-            <button class="delete-btn" data-id="${post.id}">Delete Entry</button>
+            <div class="post-actions">
+                ${actionsHtml}
+            </div>
         </div>
     `;
 };
@@ -74,8 +93,10 @@ const createPostCard = (post) => {
  * Renders the entire list of posts to the DOM and attaches event listeners.
  * @param {Array} posts - The array of post objects to display.
  * @param {function} deleteHandler - The function from app.js to call when a delete button is clicked.
+ * @param {function} changeStatusHandler - Function to change a post's status (archive/restore/delete).
+ * @param {string} currentView - The current view ('active'|'archive'|'trash').
  */
-export const renderPosts = (posts, deleteHandler) => {
+export const renderPosts = (posts, deleteHandler, changeStatusHandler, currentView = 'active') => {
     postsContainer.innerHTML = '';
 
     if (posts.length === 0) {
@@ -86,16 +107,40 @@ export const renderPosts = (posts, deleteHandler) => {
     // Sort posts by ID (timestamp) descending so newest is on top
     const sortedPosts = [...posts].sort((a, b) => b.id - a.id);
 
-    // Build the HTML for all posts
-    const postsHtml = sortedPosts.map(createPostCard).join('');
+    // Build the HTML for all posts (pass currentView so cards can render appropriate actions)
+    const postsHtml = sortedPosts.map(p => createPostCard(p, currentView)).join('');
     postsContainer.innerHTML = postsHtml;
 
-    // Attach event listeners to all new delete buttons
+    // Attach event listeners to action buttons (delete, archive, restore, permanent-delete)
+    // Delete (soft-delete) buttons
     document.querySelectorAll('.delete-btn').forEach(button => {
         button.addEventListener('click', (event) => {
-            // Convert the data-id string attribute back to a number
-            const postId = parseInt(event.target.dataset.id); 
-            deleteHandler(postId); 
+            const postId = parseInt(event.target.dataset.id);
+            if (typeof deleteHandler === 'function') deleteHandler(postId);
+        });
+    });
+
+    // Archive buttons
+    document.querySelectorAll('.archive-btn').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const postId = parseInt(event.target.dataset.id);
+            if (typeof changeStatusHandler === 'function') changeStatusHandler(postId, 'archived');
+        });
+    });
+
+    // Restore buttons (from archive or trash back to active)
+    document.querySelectorAll('.restore-btn').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const postId = parseInt(event.target.dataset.id);
+            if (typeof changeStatusHandler === 'function') changeStatusHandler(postId, 'active');
+        });
+    });
+
+    // Permanent delete buttons
+    document.querySelectorAll('.perma-delete-btn').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const postId = parseInt(event.target.dataset.id);
+            if (typeof changeStatusHandler === 'function') changeStatusHandler(postId, 'permanent-delete');
         });
     });
 };
