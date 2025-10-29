@@ -21,8 +21,8 @@ def log_to_file(content: str):
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(content + "\n")
 
-# Attach the log file path to the function for easy reference in main.py
-log_to_file.log_file = LOG_FILE 
+# Expose the log file path as a module-level constant for other modules to use.
+# This is clearer and type-checker friendly compared to attaching attributes to a function.
 
 def setup_log(keyword, category, language, country):
     """Writes the header and search parameters to the log file."""
