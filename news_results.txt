@@ -232,3 +232,211 @@ You're seeing online esports betting explode ...
 
 ✅ Search completed.
 
+================================================================================
+🕓 SEARCH TIMESTAMP: 2025-10-29 21:45:31
+🔍 KEYWORD: ai
+📂 CATEGORY: technology
+🌐 LANGUAGE: en
+🏳️ COUNTRY: us
+================================================================================
+
+✅ Retrieved 17 of 18 top headlines.
+
+--- TOP HEADLINES ---
+
+📰 ARTICLE #1
+  Title: NASCAR and Night launch NASCAR 25 Creator Series in celebration of NASCAR 25 - NASCAR.com
+  Source: NASCAR
+  Published: 2025-10-28T17:05:44Z
+  URL: https://www.nascar.com/news-media/2025/10/28/nascar-and-night-launch-nascar-25-creator-series-in-celebration-of-nascar-25/
+  Description: NASCAR and Night, a next-gen media and entertainment company, launch NASCAR 25 Creator Series in celebration of NASCAR 25.
+------------------------------------------------------------
+
+📰 ARTICLE #2
+  Title: Battlefield’s free battle royale mode is available now - The Verge
+  Source: The Verge
+  Published: 2025-10-28T15:22:58Z
+  URL: https://www.theverge.com/news/807720/ea-battlefield-6-battle-royale-redsec
+  Description: EA has revealed details about the battle royale mode for Battlefield 6, called Redsec, which is free to play now.
+------------------------------------------------------------
+
+📰 ARTICLE #3
+  Title: As its original devs post conflicting takes on the controversial remake, I have to ask: who is Halo: Campaign Evolved for? - Eurogamer
+  Source: Eurogamer.net
+  Published: 2025-10-28T15:00:00Z
+  URL: https://www.eurogamer.net/as-its-original-devs-post-conflicting-takes-on-the-controversial-remake-i-have-to-ask-who-is-halo-campaign-evolved-for
+  Description: A remake of a remake.
+------------------------------------------------------------
+
+📰 ARTICLE #4
+  Title: Both real-life and lab tests suggest iPhone Air battery lasts a typical day - 9to5Mac
+  Source: 9to5Mac
+  Published: 2025-10-28T14:05:00Z
+  URL: https://9to5mac.com/2025/10/28/both-real-life-and-lab-tests-suggest-iphone-air-battery-lasts-a-typical-day/
+  Description: One of the key compromises with the iPhone Air is a smaller battery, but a combination of real-life usage and...
+------------------------------------------------------------
+
+📰 ARTICLE #5
+  Title: Privacy laws can’t keep up with ‘luxury surveillance’ - The Verge
+  Source: The Verge
+  Published: 2025-10-28T14:00:00Z
+  URL: https://www.theverge.com/tech/807834/meta-smart-glasses-privacy-laws-wearables
+  Description: Legal experts explain the laws and ethics of recording other people with Meta’s new smart glasses and other wearables.
+------------------------------------------------------------
+
+📰 ARTICLE #6
+  Title: See a colossal 'X' and 'V' appear on the moon after sunset tonight - Space
+  Source: Space.com
+  Published: 2025-10-28T12:00:00Z
+  URL: https://www.space.com/stargazing/see-a-colossal-x-and-v-appear-on-the-moon-after-sunset-tonight
+  Description: Turn your telescope on the moon at sunset on Oct. 28 to see a colossal "X" and "V" form on the lunar surface as sunlight picks out broken terrain along the terminator.
+------------------------------------------------------------
+
+📰 ARTICLE #7
+  Title: John Carmack says NVIDIA DGX Spark runs at half of the rated power and delivers half the quoted performance - VideoCardz.com
+  Source: Videocardz.com
+  Published: 2025-10-28T07:48:00Z
+  URL: https://videocardz.com/newz/john-carmack-says-nvidia-dgx-spark-runs-at-half-of-the-rated-power-and-delivers-half-the-quoted-performance
+  Description: John Carmack says NVIDIA DGX Spark draws under half its rated power, delivers half expected performance Image courtesy of OnThisDay & Ryans In a post on X, John Carmack, NVIDIA’s new DGX Spark system is not reaching its claimed performance targets. He and oth…
+------------------------------------------------------------
+
+📰 ARTICLE #8
+  Title: Next-gen Xbox to feature full Windows, backward compatibility, and free online multiplayer - TechSpot
+  Source: TechSpot
+  Published: 2025-10-28T03:15:19Z
+  URL: https://www.techspot.com/news/110031-next-gen-xbox-feature-full-windows-backward-compatibility.html
+  Description: According to the rumor mill, the next Xbox console will have access to all Windows software and support all games currently available on Xbox Series consoles. The...
+------------------------------------------------------------
+
+📰 ARTICLE #9
+  Title: OnePlus Tells Us Everything About the OnePlus 15 Early - Droid Life
+  Source: Droid Life
+  Published: 2025-10-28T00:35:03Z
+  URL: https://www.droid-life.com/2025/10/27/oneplus-15-goes-official-in-china-and-here-are-all-the-specs/
+  Description: OnePlus announced its new OnePlus 15 flagship phone for China today, giving us all an early look at a device that is likely to launch here in the coming weeks or months. OnePlus has not yet said when this device could hit our shores, but arriving in China is …
+------------------------------------------------------------
+
+📰 ARTICLE #10
+  Title: Samsung, Google unveil $1,799 device that aims to replace everything - TheStreet
+  Source: TheStreet
+  Published: 2025-10-28T00:07:00Z
+  URL: https://www.thestreet.com/entertainment/samsung-google-unveil-1799-device-that-aims-to-replace-everything
+  Description: Samsung and Google’s Galaxy XR headset blends AI, apps, and immersive computing in one sleek device.
+------------------------------------------------------------
+
+📰 ARTICLE #11
+  Title: Apple Drops MacBook Air M4 Price Yet Again, Now Cheaper Than Basic Windows Laptops - Kotaku
+  Source: Kotaku
+  Published: 2025-10-27T22:24:07Z
+  URL: https://kotaku.com/apple-drops-macbook-air-m4-price-yet-again-now-cheaper-than-basic-windows-laptops-2000639289
+  Description: Ultraportable laptop with M4 chip, 16GB memory, and 18-hour battery life.
+------------------------------------------------------------
+
+📰 ARTICLE #12
+  Title: Fitbit’s revamped app, with Gemini-powered health coach, rolls out to Premium users - TechCrunch
+  Source: TechCrunch
+  Published: 2025-10-27T19:11:50Z
+  URL: https://techcrunch.com/2025/10/27/fitbits-revamped-app-with-gemini-powered-health-coach-rolls-out-to-premium-users/
+  Description: Called “Coach,” this feature is designed to be your all-in-one fitness trainer, sleep coach, and health and wellness advisor.
+------------------------------------------------------------
+
+📰 ARTICLE #13
+  Title: EA’s Attempt to Use AI for Game Development Backfiring Horribly - Futurism
+  Source: Futurism
+  Published: 2025-10-27T19:06:05Z
+  URL: http://futurism.com/artificial-intelligence/ea-attempts-use-ai-game-development-backfiring
+  Description: Staffers at major video game developer Electronic Arts told Business Insider, their employer's attempts to use AI are backfiring.
+------------------------------------------------------------
+
+📰 ARTICLE #14
+  Title: Obsidian: A studio where fun, fantasy and dedication to role-playing games reign supreme - Microsoft Source
+  Source: Microsoft.com
+  Published: 2025-10-27T16:08:12Z
+  URL: https://news.microsoft.com/source/features/work-life/obsidian-a-studio-where-fun-fantasy-and-dedication-to-role-playing-games-reign-supreme/
+  Description: Discover how Obsidian Entertainment approaches role-playing games to expand their legacy of funny, player-driven experiences.
+------------------------------------------------------------
+
+📰 ARTICLE #15
+  Title: Celebrate the Pokémon TCG: Mega Lucario ex Figure Collection with Pokémon GO - Pokemon.com
+  Source: Pokemon.com
+  Published: 2025-10-27T16:06:10Z
+  URL: https://www.pokemon.com/us/pokemon-news/celebrate-the-pokemon-tcg-mega-lucario-ex-figure-collection-with-pokemon-go
+  Description: Visit participating retailers to check out the new Mega Lucario ex Figure Collection and take on Mega Lucario Raid Battles.
+------------------------------------------------------------
+
+📰 ARTICLE #16
+  Title: Sora is showing us how broken deepfake detection is - The Verge
+  Source: The Verge
+  Published: 2025-10-27T16:00:00Z
+  URL: https://www.theverge.com/report/806359/openai-sora-deepfake-detection-c2pa-content-credentials
+  Description: OpenAI’s video generator embeds C2PA metadata that can help identify deepfakes when posted to other platforms, but the system clearly isn’t working.
+------------------------------------------------------------
+
+📰 ARTICLE #17
+  Title: Xbox take massive 200+ foot TV into the air over Miami to break bizarre gaming world records - supercarblondie.com
+  Source: Supercarblondie.com
+  Published: 2025-10-26T23:37:00Z
+  URL: https://supercarblondie.com/xbox-ninja-gaiden-4-helicopter-record-swae-lee/
+  Description: Xbox has flown two helicopters over Miami, carrying a massive 200+ foot TV and rapper Swae Lee, all to break one of the most bizarre gaming world records
+------------------------------------------------------------
+
+
+🔬 ADVANCED SEARCH RESULTS (Everything Endpoint) for: 'ai'
+Total relevant articles found: 26157
+
+RESULT #1 (Published: 2025-10-28):
+  Title: Cuba sulla rotta dell'uragano Melissa, in fuga gli abitanti del sud-est
+  Snippet: Le autorita' evacuano i residenti delle aree a maggior rischio intorno a Santiag...
+  URL: https://www.ansa.it/sito/videogallery/mondo/2025/10/28/cuba-sulla-rotta-delluragano-melissa-in-fuga-gli-abitanti-del-sud_ea872596-2bbd-43a6-bf76-613883483b86.html
+------------------------------------------------------------
+
+RESULT #2 (Published: 2025-10-28):
+  Title: Ecco perché il Napoli ha speso 22 milioni: (quasi) nessuno para i rigori come Milinkovic
+  Snippet: Vanja Milinkovic-Savic è stato un grandissimo protagonista, nel successo ottenut...
+  URL: https://www.tuttomercatoweb.com/serie-a/ecco-perche-il-napoli-ha-speso-22-milioni-quasi-nessuno-para-i-rigori-come-milinkovic-2162101
+------------------------------------------------------------
+
+RESULT #3 (Published: 2025-10-28):
+  Title: Ambiq חושפת את שבבי ה-Apollo510 Lite להעצמת מכשירי קצה פעילים תמידית עם קישוריות Bluetooth דו-מצבית
+  Snippet: סדרת המערכות על שבב החדשה Apollo510 Lite מספקת יעילות אנרגטית וביצועי בינה מלאכו...
+  URL: https://www.globenewswire.com/news-release/2025/10/28/3175996/0/he/Ambiq-%D7%97%D7%95%D7%A9%D7%A4%D7%AA-%D7%90%D7%AA-%D7%A9%D7%91%D7%91%D7%99-%D7%94-Apollo510-Lite-%D7%9C%D7%94%D7%A2%D7%A6%D7%9E%D7%AA-%D7%9E%D7%9B%D7%A9%D7%99%D7%A8%D7%99-%D7%A7%D7%A6%D7%94-%D7%A4%D7%A2%D7%99%D7%9C%D7%99%D7%9D-%D7%AA%D7%9E%D7%99%D7%93%D7%99%D7%AA-%D7%A2%D7%9D-%D7%A7%D7%99%D7%A9%D7%95%D7%A8%D7%99%D7%95%D7%AA-Bluetooth-%D7%93%D7%95-%D7%9E%D7%A6%D7%91%D7%99%D7%AA.html
+------------------------------------------------------------
+
+RESULT #4 (Published: 2025-10-28):
+  Title: アンビック (Ambiq)、デュアルモードBluetooth接続を備えた常時稼働エッジを駆動するアポロ510ライトSoC (Apollo510 Lite SoCs) を発表
+  Snippet: 新型アポロ510ライトSoCシリーズは、画期的なエネルギー効率とAI性能を実現し、よりスマートで長寿命な接続デバイスを可能にする 新型アポロ510ライトSoCシ...
+  URL: https://www.globenewswire.com/news-release/2025/10/28/3175996/0/ja/%E3%82%A2%E3%83%B3%E3%83%93%E3%83%83%E3%82%AF-Ambiq-%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%A2%E3%83%BC%E3%83%89Bluetooth%E6%8E%A5%E7%B6%9A%E3%82%92%E5%82%99%E3%81%88%E3%81%9F%E5%B8%B8%E6%99%82%E7%A8%BC%E5%83%8D%E3%82%A8%E3%83%83%E3%82%B8%E3%82%92%E9%A7%86%E5%8B%95%E3%81%99%E3%82%8B%E3%82%A2%E3%83%9D%E3%83%AD510%E3%83%A9%E3%82%A4%E3%83%88SoC-Apollo510-Lite-SoCs-%E3%82%92%E7%99%BA%E8%A1%A8.html
+------------------------------------------------------------
+
+RESULT #5 (Published: 2025-10-28):
+  Title: Ambiq เปิดตัว Apollo510 Lite SoCs เพื่อขับเคลื่อนอุปกรณ์ Always-On Edge พร้อมการเชื่อมต่อบลูทูธแบบสองโหมด
+  Snippet: Apollo510 Lite SoC Series ใหม่มอบประสิทธิภาพการใช้พลังงานและประสิทธิภาพด้าน AI ท...
+  URL: https://www.globenewswire.com/news-release/2025/10/28/3175996/0/th/Ambiq-%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B8%A7-Apollo510-Lite-SoCs-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%82%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C-Always-On-Edge-%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B8%9A%E0%B8%A5%E0%B8%B9%E0%B8%97%E0%B8%B9%E0%B8%98%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%94.html
+------------------------------------------------------------
+
+RESULT #6 (Published: 2025-10-28):
+  Title: Ambiq presenta los SoCs Apollo510 Lite para potenciar el Edge siempre activo con conectividad Bluetooth de doble modo
+  Snippet: La nueva serie Apollo510 Lite ofrece eficacia energética y rendimiento de IA rev...
+  URL: https://www.globenewswire.com/news-release/2025/10/28/3175996/0/es/Ambiq-presenta-los-SoCs-Apollo510-Lite-para-potenciar-el-Edge-siempre-activo-con-conectividad-Bluetooth-de-doble-modo.html
+------------------------------------------------------------
+
+RESULT #7 (Published: 2025-10-28):
+  Title: Ambiq, 듀얼 모드 Bluetooth 연결 기반 “항상 켜진 엣지”를 위한 Apollo510 Lite SoC 공개
+  Snippet: 새로운 Apollo510 Lite SoC 시리즈, 더 스마트하고 오래가는 연결 기기를 위한 획기적 에너지 효율과 AI 성능 제공 새로운 Apol...
+  URL: https://www.globenewswire.com/news-release/2025/10/28/3175996/0/ko/Ambiq-%EB%93%80%EC%96%BC-%EB%AA%A8%EB%93%9C-Bluetooth-%EC%97%B0%EA%B2%B0-%EA%B8%B0%EB%B0%98-%ED%95%AD%EC%83%81-%EC%BC%9C%EC%A7%84-%EC%97%A3%EC%A7%80-%EB%A5%BC-%EC%9C%84%ED%95%9C-Apollo510-Lite-SoC-%EA%B3%B5%EA%B0%9C.html
+------------------------------------------------------------
+
+RESULT #8 (Published: 2025-10-28):
+  Title: Ambiq Perkenalkan Siri Apollo510 Lite SoCs untuk Menggerakkan Edge Sentiasa Aktif dengan Kesambungan Bluetooth Dwi-Mod
+  Snippet: Siri Apollo510 Lite SoC Baharu menawarkan kecekapan tenaga dan prestasi AI yang ...
+  URL: https://www.globenewswire.com/news-release/2025/10/28/3175996/0/ms/Ambiq-Perkenalkan-Siri-Apollo510-Lite-SoCs-untuk-Menggerakkan-Edge-Sentiasa-Aktif-dengan-Kesambungan-Bluetooth-Dwi-Mod.html
+------------------------------------------------------------
+
+RESULT #9 (Published: 2025-10-28):
+  Title: Ambiq 發佈 Apollo510 Lite 系統單晶片，以雙模藍牙連接技術驅動持續運行的邊緣裝置
+  Snippet: 全新 Apollo510 Lite 單晶片系統系列實現破格能源效率及人工智能表現，使連接裝置更智能、更持久 全新 Apollo510 Lite 單晶片系統系列實...
+  URL: https://www.globenewswire.com/news-release/2025/10/28/3175996/0/zh-hant/Ambiq-%E7%99%BC%E4%BD%88-Apollo510-Lite-%E7%B3%BB%E7%B5%B1%E5%96%AE%E6%99%B6%E7%89%87-%E4%BB%A5%E9%9B%99%E6%A8%A1%E8%97%8D%E7%89%99%E9%80%A3%E6%8E%A5%E6%8A%80%E8%A1%93%E9%A9%85%E5%8B%95%E6%8C%81%E7%BA%8C%E9%81%8B%E8%A1%8C%E7%9A%84%E9%82%8A%E7%B7%A3%E8%A3%9D%E7%BD%AE.html
+------------------------------------------------------------
+
+✅ Search completed.
+
