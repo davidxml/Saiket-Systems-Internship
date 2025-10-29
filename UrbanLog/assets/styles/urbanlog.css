@@ -9,6 +9,9 @@
     --color-action-primary: #007bff;
     --color-action-hover: #0056b3;
     --color-action-danger: #dc3545;
+    --color-action-danger-hover: #c82333;
+    --color-action-secondary: #6c757d;
+    --color-action-secondary-hover: #5a6268;
     --color-line-mark: #090808;
     
     /* Spacing and Layout */
@@ -30,7 +33,11 @@ body.dark-mode {
     --color-text-primary: #e0e0e0;
     --color-border: #444;
     --color-action-primary: #75b7ff; /* Lighter blue for visibility */
+    --color-action-hover: #a9d1ff;
     --color-action-danger: #ff6b6b;
+    --color-action-danger-hover: #ff8787;
+    --color-action-secondary: #8a9298;
+    --color-action-secondary-hover: #a6abb1;
     --color-line-mark: #fbf5f5;
 }
 
@@ -155,7 +162,7 @@ h2, h3 {
 }
 
 #post-form button:hover {
-    background-color: #0056b3;
+    background-color: var(--color-action-hover);
 }
 
 /* Mode Toggle Button Styling */
@@ -195,20 +202,6 @@ h2, h3 {
     white-space: pre-wrap;
     margin-bottom: 5px;
     font-size: 0.95em;
-}
-
-.delete-btn {
-    background-color: var(--color-action-danger);
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.delete-btn:hover {
-    background-color: #c82333;
 }
 
 /* --- Responsive Design for Three Panes --- */
@@ -273,25 +266,45 @@ footer p {
     gap: 10px;
 }
 
-.action-btn {
-    background-color: #6c757d; /* Muted gray for secondary actions */
+/* *** FIX: Added .archive-btn and .restore-btn to this generic rule *** */
+.action-btn,
+.archive-btn,
+.restore-btn {
+    background-color: var(--color-action-secondary); /* Muted gray for secondary actions */
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: normal;
+    font-size: 0.9em;
     transition: background-color 0.2s;
 }
 
-.action-btn:hover {
-    background-color: #5a6268;
+.action-btn:hover,
+.archive-btn:hover,
+.restore-btn:hover {
+    background-color: var(--color-action-secondary-hover);
 }
 
-/* Re-target the delete button for clarity within the card */
-.delete-btn {
-    /* Existing styles remain for danger action */
+/* *** FIX: Added .perma-delete-btn to the danger rule *** */
+.delete-btn,
+.perma-delete-btn {
     background-color: var(--color-action-danger);
-    /* ... (other styles) */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0; /* Align with other buttons */
+    font-weight: normal;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover,
+.perma-delete-btn:hover {
+    background-color: var(--color-action-danger-hover);
 }
 
 #search-filter-panel {
@@ -319,6 +332,20 @@ footer p {
     color: var(--color-text-primary);
     cursor: pointer;
 }
+
+/* *** FIX: Added style for the new search button *** */
+#search-btn {
+    background-color: var(--color-action-primary);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-color: var(--color-action-primary);
+}
+
+#search-btn:hover {
+    background-color: var(--color-action-hover);
+}
+
 
 /* Responsive adjustment for search */
 @media (max-width: 600px) {
