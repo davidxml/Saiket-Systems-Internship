@@ -1,6 +1,6 @@
 import sys
 from news_fetcher import fetch_top_headlines, run_advanced_search
-from utils import get_user_parameters, setup_log, log_to_file
+from utils import get_user_parameters, setup_log, log_to_file, LOG_FILE
 
 def main():
     """The main function to orchestrate the news fetching process."""
@@ -24,7 +24,7 @@ def main():
         
         # 6. Finalization
         log_to_file("✅ Search completed.\n")
-        print(f"\n🗂️ All results saved to '{log_to_file.log_file}'") 
+        print(f"\n🗂️ All results saved to '{LOG_FILE}'") 
 
     except Exception as e:
         print(f"An unexpected error occurred in the main process: {e}")
