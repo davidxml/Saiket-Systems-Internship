@@ -48,9 +48,12 @@ def get_user_parameters():
     language = LANGUAGE_MAP.get(language_input, language_input)
 
     # Country code standardization (must be uppercase for News API)
-    country = input(
-        "🏳️ Country code (NG, US, FR, etc. - use **uppercase** for best results): "
-    ).strip().upper()
+    country_input = input(
+        "🏳️ Country code (NG, US, FR, etc. - two-letter ISO code, e.g. 'us' or 'ng'; leave blank to skip): "
+    ).strip().lower()
+
+    # Normalize country: NewsAPI expects a lower-case 2-letter ISO 3166-1 code (or None).
+    country = country_input.lower() if country_input else None
 
     return keyword, category, language, country
 
