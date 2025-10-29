@@ -14,8 +14,8 @@ class GuessingGame:
         self.guess_count += 1   # tracks the guess
         if guess == self.secret_number:
             self.game_over = True
-            return "Excellent, your guess was correct"
+            return "correct"
         elif guess < self.secret_number:
-            return " Your guess is low"
+            return "low"
         else: 
-            return "Your guess is high"
+            return "high"
