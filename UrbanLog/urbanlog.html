@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UrbanLog: A universal logbook for daily thoughts, notes, and reflections">
+    <title>UrbanLog: The Universal Logbook</title>
+    <link rel="stylesheet" href="assets/styles/urbanlog.css">
+</head>
+<body>
+
+    <header>
+        <h1>UrbanLog: The Universal Logbook</h1>
+        <button id="mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        
+        <section id="writing-panel">
+            <h2>New Entry</h2>
+            <form id="post-form">
+                
+                <input type="text" id="post-title" placeholder="Title: Date, Topic, or Meeting Summary..." required>
+
+                <div class="writing-panes-container">
+                    <div class="pane main-log-pane">
+                        <h3> Primary Log / Narrative</h3>
+                        <textarea id="main-log" placeholder="Detailed report, summary of the day, or lecture notes..." rows="12" required></textarea>
+                    </div>
+
+                    <div class="pane side-panes-group">
+                        <div class="side-pane">
+                            <h3> Key Takeaways / Action Items</h3>
+                            <textarea id="key-takeaways" placeholder="Critical notes, tasks for tomorrow, or core data points." rows="5"></textarea>
+                        </div>
+                        <div class="side-pane">
+                            <h3> Personal Reflection / AAR</h3>
+                            <textarea id="daily-reflection" placeholder="Analysis of the day, emotional state, or lessons learned." rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Save Entry to Log</button>
+            </form>
+        </section>
+        <section id="view-navigation">
+            <button id="view-active" data-view="active" class="view-btn active">Active Log</button>
+            <button id="view-archive" data-view="archive" class="view-btn">Archive</button>
+            <button id="view-trash" data-view="trash" class="view-btn">Trash</button>
+        </section>
+        <section id="search-filter-panel">
+            <input type="text" id="search-input" placeholder="Search entries by title or keyword...">
+    
+            <select id="category-filter">
+                <option value="all">Search All Sections</option>
+                <option value="content">Primary Log / Narrative</option>
+                <option value="keyTakeaways">Key Takeaways / Action Items</option>
+                <option value="reflection">Personal Reflection / AAR</option>
+            </select>
+
+            <button id="search-btn" class="action-btn">Search</button>
+        </section>
+        <section id="log-history">
+            
+            <h2 id="log-history-title">Active Log</h2>
+
+            <div id="posts-container">
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UrbanLabs. All rights reserved.</p>
+    </footer>
+    <script type="module" src="assets/scripts/app.js"></script>
+    
+    <script>
+        window.addEventListener('error', function(event) {
+            console.error('Script loading error:', event.error);
+            // Show user-friendly error message
+            if (document.readyState === 'complete') {
+                alert('There was an error loading the application. Please refresh the page.');
+            }
+        });
+    </script>
+</body>
+</html>
