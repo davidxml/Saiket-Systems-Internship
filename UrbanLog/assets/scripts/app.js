@@ -1,9 +1,9 @@
-// app.js - The main entry point and orchestrator for UrbanLog.
-
 // Import functions from our services and components
-import * as Storage from '../services/storage.js';
-import * as UI from '../components/ui.js';
-import * as PostForm from '../components/postForm.js';
+
+// *** FIX: Corrected import paths from ../ to ./ ***
+import * as Storage from './services/storage.js';
+import * as UI from './components/ui.js';
+import * as PostForm from './components/postForm.js';
 
 // Application State
 let posts = [];
@@ -89,21 +89,22 @@ const switchView = (view) => {
     searchTerm = '';
     UI.clearSearchInput(); // We will add this helper to ui.js
     
+    // *** FIX: Update the main log title ***
+    UI.updateLogHistoryTitle(view); 
+
     saveAndRender();
     UI.updateViewButtons(currentView);
 };
 
-/**
- * Updates the search term and re-renders the list.
- * @param {string} term - The text input from the search bar.
- */
 
-
+// *** FIX: Replaced updateSearchTerm and updateSearchCategory with one handler ***
 /**
- * Updates the search category and re-renders the list.
- * @param {string} category - The selected field from the dropdown.
+ * Handles the search button click.
+ * @param {string} term - The text from the search input.
+ * @param {string} category - The selected value from the dropdown.
  */
-const updateSearchCategory = (category) => {
+const handleSearch = (term, category) => {
+    searchTerm = term;
     searchCategory = category;
     saveAndRender();
 };
@@ -224,8 +225,15 @@ const initApp = () => {
         
         // 3. Initialize Components with Error Handling
         UI.initViewButtons(switchView);
-        UI.initSearch(updateSearchTerm, updateSearchCategory);
+
+        // *** FIX: Updated initSearch to use the new single handler ***
+        UI.initSearch(handleSearch);
+
         UI.updateViewButtons(currentView);
+
+        // *** FIX: Set the initial log title ***
+        UI.updateLogHistoryTitle(currentView);
+
         PostForm.initForm(createPost);
         UI.initThemeToggle(toggleTheme);
         
@@ -253,20 +261,9 @@ const initApp = () => {
         errorMsg.textContent = 'Unable to initialize UrbanLog. Please refresh the page.';
         document.body.insertBefore(errorMsg, document.body.firstChild);
     }
-};/**
- * Updates the search term and re-renders the list.
- * @param {string} term - The text input from the search bar.
- */
+};
 
-let searchTimeout;
-const updateSearchTerm = (term) => {
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => {
-        searchTerm = term;
-        saveAndRender();
-    }, 300);
-}
-
+// *** FIX: Removed the old, separate updateSearchTerm function that was here ***
 
 // Start the application when the script loads
 initApp();
