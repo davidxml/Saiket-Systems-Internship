@@ -1,0 +1,234 @@
+================================================================================
+🕓 SEARCH TIMESTAMP: 2025-10-29 21:37:51
+🔍 KEYWORD: ai
+📂 CATEGORY: technology
+🌐 LANGUAGE: en
+🏳️ COUNTRY: NG
+================================================================================
+
+⚠️ Error fetching headlines: invalid country
+
+
+🔬 ADVANCED SEARCH RESULTS (Everything Endpoint) for: 'ai'
+Total relevant articles found: 26157
+
+RESULT #1 (Published: 2025-10-28):
+  Title: (PR) HPE to Build "Mission" and "Vision" Supercomputers Featuring NVIDIA Vera Rubin
+  Snippet: HPE today announced, in partnership with the U.S. Department of Energy (DOE), Na...
+  URL: https://www.techpowerup.com/342352/hpe-to-build-mission-and-vision-supercomputers-featuring-nvidia-vera-rubin
+------------------------------------------------------------
+
+RESULT #2 (Published: 2025-10-28):
+  Title: Garlasco, Nordio: "A un certo punto bisogna avere il coraggio di arrendersi"
+  Snippet: Roma, il ministro al Salone della Giustizia: "Ma l'azione penale e' obbligatoria...
+  URL: https://www.ansa.it/sito/videogallery/italia/2025/10/28/garlasco-nordio-a-un-certo-punto-bisogna-avere-il-coraggio-di-arrendersi_a7578b35-82ef-429b-8dde-95ef94ccaeb0.html
+------------------------------------------------------------
+
+RESULT #3 (Published: 2025-10-28):
+  Title: 焦點股》英業達：AI動能充沛 創波段新高
+  Snippet: 伺服器主板龍頭廠英業達（2356）在AI伺服器領域展現訂單成長動能，並積極強化海外產能布局，受到市場買盤青睞，今日盤中高點一度觸及49.8元，創下7個月波段新高...
+  URL: https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E8%8B%B1%E6%A5%AD%E9%81%94-ai%E5%8B%95%E8%83%BD%E5%85%85%E6%B2%9B-%E5%89%B5%E6%B3%A2%E6%AE%B5%E6%96%B0%E9%AB%98-043633086.html
+------------------------------------------------------------
+
+RESULT #4 (Published: 2025-10-28):
+  Title: Emerging Trends Shaping the Future of Online Esports Betting
+  Snippet: Los Angeles CA (SPX) Oct 28, 2025
+
+You're seeing online esports betting explode ...
+  URL: https://www.spacedaily.com/reports/Emerging_Trends_Shaping_the_Future_of_Online_Esports_Betting_999.html
+------------------------------------------------------------
+
+RESULT #5 (Published: 2025-10-28):
+  Title: Lecce, Gaspar: "Camarda? Poteva capitare a chiunque. Gli staremo vicini"
+  Snippet: Kialonda Gaspar arriva ai microfoni della sala stampa del "Via del Mare" per com...
+  URL: https://www.tuttomercatoweb.com/serie-a/lecce-gaspar-camarda-poteva-capitare-a-chiunque-gli-staremo-vicini-2161945
+------------------------------------------------------------
+
+RESULT #6 (Published: 2025-10-28):
+  Title: It’s Quiet in Bond Land … Maybe Too Quiet?
+  Snippet: ...
+  URL: https://biztoc.com/x/3462650e2cfb8f75
+------------------------------------------------------------
+
+RESULT #7 (Published: 2025-10-28):
+  Title: BofA makes executive changes in technology and telecom investment banking teams, memo shows
+  Snippet: ...
+  URL: https://biztoc.com/x/bea226bc56645877
+------------------------------------------------------------
+
+RESULT #8 (Published: 2025-10-28):
+  Title: Visa Earnings Top Estimates as Consumers Keep Spending on Cards
+  Snippet: ...
+  URL: https://biztoc.com/x/2c0d9450730f938d
+------------------------------------------------------------
+
+RESULT #9 (Published: 2025-10-28):
+  Title: New York City’s Transit Chief Is Trying to Keep the Trains Running
+  Snippet: ...
+  URL: https://biztoc.com/x/e23dfdc58bb0e4e9
+------------------------------------------------------------
+
+RESULT #10 (Published: 2025-10-28):
+  Title: Booking Rises After Posting Third-Quarter Reservations Beat
+  Snippet: ...
+  URL: https://biztoc.com/x/53436c6b8ae91969
+------------------------------------------------------------
+
+✅ Search completed.
+
+================================================================================
+🕓 SEARCH TIMESTAMP: 2025-10-29 21:38:44
+🔍 KEYWORD: business
+📂 CATEGORY: general
+🌐 LANGUAGE: en
+🏳️ COUNTRY: US
+================================================================================
+
+⚠️ Error fetching headlines: invalid country
+
+
+🔬 ADVANCED SEARCH RESULTS (Everything Endpoint) for: 'business'
+Total relevant articles found: 14379
+
+RESULT #1 (Published: 2025-10-28):
+  Title: Emerging Trends Shaping the Future of Online Esports Betting
+  Snippet: Los Angeles CA (SPX) Oct 28, 2025
+
+You're seeing online esports betting explode ...
+  URL: https://www.spacedaily.com/reports/Emerging_Trends_Shaping_the_Future_of_Online_Esports_Betting_999.html
+------------------------------------------------------------
+
+RESULT #2 (Published: 2025-10-28):
+  Title: BofA makes executive changes in technology and telecom investment banking teams, memo shows
+  Snippet: ...
+  URL: https://biztoc.com/x/bea226bc56645877
+------------------------------------------------------------
+
+RESULT #3 (Published: 2025-10-28):
+  Title: Seagate forecasts second-quarter results above estimates on AI strength
+  Snippet: ...
+  URL: https://biztoc.com/x/feb397fe8c15e267
+------------------------------------------------------------
+
+RESULT #4 (Published: 2025-10-28):
+  Title: Visa quarterly profit rises on strong transaction volumes
+  Snippet: ...
+  URL: https://biztoc.com/x/42136395a07553ed
+------------------------------------------------------------
+
+RESULT #5 (Published: 2025-10-28):
+  Title: Meet the Researcher Elon Musk Pays $1 a Year to Safeguard A.I.
+  Snippet: The A.I. safety researcher behind the Center for AI Safety is advising xAI and S...
+  URL: https://observer.com/2025/10/dan-hendrycks-ai-safety-advisory-xai/
+------------------------------------------------------------
+
+RESULT #6 (Published: 2025-10-28):
+  Title: Netanyahu’s trial hearing shortened due to ‘security developments’
+  Snippet: Prime Minister Benjamin Netanyahu’s corruption trial was abruptly halted in Jeru...
+  URL: https://www.jpost.com/israel-news/politics-and-diplomacy/article-871968
+------------------------------------------------------------
+
+RESULT #7 (Published: 2025-10-28):
+  Title: Slog AM: Opponents Throw Rubbish at Katie Wilson and Zohran Mamdani, Amazon to Cut 2,400 Jobs in Washington State, the Uncle Sam Billboard Lands in the Right Hands
+  Snippet: The Stranger's Morning News Roundup
+ 
+ by Charles Mudede
+ 
+ 
+ 
+ Please do not be...
+  URL: https://www.thestranger.com/slog-am/2025/10/28/80301453/slog-am-opponents-throw-rubbish-at-katie-wilson-and-zohran-mamdani-amazon-to-cut-2400-jobs-in-washington-state-the-uncle-sam-billboard-la
+------------------------------------------------------------
+
+RESULT #8 (Published: 2025-10-28):
+  Title: Joint Statement in Solidarity with Alberta Teachers
+  Snippet: TORONTO, Oct. 28, 2025 (GLOBE NEWSWIRE) — L’Association des enseignantes et des ...
+  URL: https://financialpost.com/globe-newswire/joint-statement-in-solidarity-with-alberta-teachers
+------------------------------------------------------------
+
+RESULT #9 (Published: 2025-10-28):
+  Title: Capital Power declares dividends for its Common and Preference shares
+  Snippet: EDMONTON, Alberta, Oct. 28, 2025 (GLOBE NEWSWIRE) — The Board of Directors for C...
+  URL: https://financialpost.com/globe-newswire/capital-power-declares-dividends-for-its-common-and-preference-shares-15
+------------------------------------------------------------
+
+✅ Search completed.
+
+================================================================================
+🕓 SEARCH TIMESTAMP: 2025-10-29 21:40:02
+🔍 KEYWORD: ai
+📂 CATEGORY: technology
+🌐 LANGUAGE: en
+🏳️ COUNTRY: US
+================================================================================
+
+⚠️ Error fetching headlines: invalid country
+
+
+🔬 ADVANCED SEARCH RESULTS (Everything Endpoint) for: 'ai'
+Total relevant articles found: 26160
+
+RESULT #1 (Published: 2025-10-28):
+  Title: Nvidia and Nokia Form $1 Billion Communications Pact
+  Snippet: Nvidia is investing $1 billion in Nokia through a partnership with the Finnish t...
+  URL: https://www.pymnts.com/partnerships/2025/nvidia-and-nokia-form-1-billion-communications-pact/
+------------------------------------------------------------
+
+RESULT #2 (Published: 2025-10-28):
+  Title: Elon Musk launches Grokipedia to compete with online encyclopedia Wikipedia
+  Snippet: Elon Musk has launched Grokipedia, a crowdsourced online encyclopedia that the b...
+  URL: https://financialpost.com/pmn/elon-musk-launches-grokipedia-to-compete-with-online-encyclopedia-wikipedia
+------------------------------------------------------------
+
+RESULT #3 (Published: 2025-10-28):
+  Title: Trust In AI Shopping Is Limited As Shoppers Verify On Websites via @sejournal, @MattGSouthern
+  Snippet: An IAB report finds AI speeds discovery but adds steps, sending shoppers to reta...
+  URL: https://www.searchenginejournal.com/trust-in-ai-shopping-is-limited-as-shoppers-verify-on-websites/559497/
+------------------------------------------------------------
+
+RESULT #4 (Published: 2025-10-28):
+  Title: instrumentaipdfsplitter 5.3.0
+  Snippet: AI-assisted instrument part detector and PDF splitter...
+  URL: https://pypi.org/project/instrumentaipdfsplitter/5.3.0/
+------------------------------------------------------------
+
+RESULT #5 (Published: 2025-10-28):
+  Title: Napoli, il pararigori Milinkovic-Savic: "Non so come faccio, è una cosa che ho dentro"
+  Snippet: Vanja Milikovic-Savic, portiere del Napoli, ha parlato ai microfoni di DAZN al t...
+  URL: https://www.tuttomercatoweb.com/serie-a/napoli-il-pararigori-milinkovic-savic-non-so-come-faccio-e-una-cosa-che-ho-dentro-2162092
+------------------------------------------------------------
+
+RESULT #6 (Published: 2025-10-28):
+  Title: 1X opens pre-orders for $20,000 NEO humanoid home robot
+  Snippet: 1X has opened pre-orders for the NEO humanoid AI home robot capable of autonomou...
+  URL: https://www.notebookcheck.net/1X-opens-pre-orders-for-20-000-NEO-humanoid-home-robot.1149203.0.html
+------------------------------------------------------------
+
+RESULT #7 (Published: 2025-10-28):
+  Title: (PR) HPE to Build "Mission" and "Vision" Supercomputers Featuring NVIDIA Vera Rubin
+  Snippet: HPE today announced, in partnership with the U.S. Department of Energy (DOE), Na...
+  URL: https://www.techpowerup.com/342352/hpe-to-build-mission-and-vision-supercomputers-featuring-nvidia-vera-rubin
+------------------------------------------------------------
+
+RESULT #8 (Published: 2025-10-28):
+  Title: Garlasco, Nordio: "A un certo punto bisogna avere il coraggio di arrendersi"
+  Snippet: Roma, il ministro al Salone della Giustizia: "Ma l'azione penale e' obbligatoria...
+  URL: https://www.ansa.it/sito/videogallery/italia/2025/10/28/garlasco-nordio-a-un-certo-punto-bisogna-avere-il-coraggio-di-arrendersi_a7578b35-82ef-429b-8dde-95ef94ccaeb0.html
+------------------------------------------------------------
+
+RESULT #9 (Published: 2025-10-28):
+  Title: 焦點股》英業達：AI動能充沛 創波段新高
+  Snippet: 伺服器主板龍頭廠英業達（2356）在AI伺服器領域展現訂單成長動能，並積極強化海外產能布局，受到市場買盤青睞，今日盤中高點一度觸及49.8元，創下7個月波段新高...
+  URL: https://tw.news.yahoo.com/%E7%84%A6%E9%BB%9E%E8%82%A1-%E8%8B%B1%E6%A5%AD%E9%81%94-ai%E5%8B%95%E8%83%BD%E5%85%85%E6%B2%9B-%E5%89%B5%E6%B3%A2%E6%AE%B5%E6%96%B0%E9%AB%98-043633086.html
+------------------------------------------------------------
+
+RESULT #10 (Published: 2025-10-28):
+  Title: Emerging Trends Shaping the Future of Online Esports Betting
+  Snippet: Los Angeles CA (SPX) Oct 28, 2025
+
+You're seeing online esports betting explode ...
+  URL: https://www.spacedaily.com/reports/Emerging_Trends_Shaping_the_Future_of_Online_Esports_Betting_999.html
+------------------------------------------------------------
+
+✅ Search completed.
+
