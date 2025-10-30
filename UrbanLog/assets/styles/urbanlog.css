@@ -1,26 +1,32 @@
+/* Import fonts for header and body */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap');
+
 /* --- Root Variables for Theming --- */
 :root {
-    /* Light Mode Defaults */
-    --color-bg-primary: #f4f4f9;
-    --color-bg-secondary: #ffffff;
-    --color-text-primary: #333;
-    --color-text-muted: #666;
-    --color-border: #ddd;
-    --color-action-primary: #007bff;
-    --color-action-hover: #0056b3;
-    --color-action-danger: #dc3545;
-    --color-action-danger-hover: #c82333;
-    --color-action-secondary: #6c757d;
-    --color-action-secondary-hover: #5a6268;
-    --color-line-mark: #090808;
-    
+    /* Professional Light Theme (not pure white) */
+    --color-bg-primary: #f4f6f9; /* subtle off-white */
+    --color-bg-secondary: #ffffff; /* cards / panels */
+    --color-text-primary: #1f2933; /* dark slate for crisp text */
+    --color-text-muted: #6b7280;
+    --color-border: #e6e9ed;
+
+    /* Action colors requested by user */
+    --color-action-primary: #1e90ff; /* save (blue) */
+    --color-action-hover: #0b66c2;
+    --color-action-danger: #ff3b30; /* brighter trash (red) */
+    --color-action-danger-hover: #e53328;
+    --color-action-secondary: #ff9500; /* brighter archive (orange) */
+    --color-action-secondary-hover: #ff7a00;
+
+    --color-line-mark: #d1d5db;
+
     /* Spacing and Layout */
     --spacing-xs: 5px;
     --spacing-sm: 10px;
     --spacing-md: 15px;
     --spacing-lg: 20px;
     --spacing-xl: 30px;
-    
+
     /* Transitions */
     --transition-fast: 0.2s;
     --transition-normal: 0.3s;
@@ -28,17 +34,24 @@
 
 /* --- Dark Mode Variables (Activated via the 'dark-mode' class on the body) --- */
 body.dark-mode {
-    --color-bg-primary: #1e1e1e;
-    --color-bg-secondary: #2c2c2c;
-    --color-text-primary: #e0e0e0;
-    --color-border: #444;
-    --color-action-primary: #75b7ff; /* Lighter blue for visibility */
+    --color-bg-primary: #000000; /* deep black */
+    --color-bg-secondary: #0b0b0b; /* slightly lighter for cards */
+    --color-text-primary: #e6eef9; /* soft light text */
+    --color-border: #1f1f1f;
+    --color-action-primary: #75b7ff; /* lighter blue */
     --color-action-hover: #a9d1ff;
-    --color-action-danger: #ff6b6b;
-    --color-action-danger-hover: #ff8787;
-    --color-action-secondary: #8a9298;
-    --color-action-secondary-hover: #a6abb1;
-    --color-line-mark: #fbf5f5;
+    --color-action-danger: #ff4d4d; /* brighter red for dark mode */
+    --color-action-danger-hover: #ff6666;
+    --color-action-secondary: #ffb86b; /* brighter orange for dark */
+    --color-action-secondary-hover: #ff9d47;
+    --color-line-mark: #2b2b2b;
+}
+
+/* Shiny black background layers for dark mode */
+body.dark-mode {
+    background-color: var(--color-bg-primary);
+    background-image: radial-gradient(circle at 12% 12%, rgba(255,255,255,0.03), rgba(255,255,255,0) 16%), linear-gradient(180deg, #000000 0%, #050505 45%, #0b0b0b 100%);
+    background-attachment: fixed;
 }
 
 /* --- Global Styles --- */
@@ -353,4 +366,38 @@ footer p {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+/* Ensure action buttons use the intended colors with higher specificity */
+.post-card .archive-btn,
+.post-actions .archive-btn {
+    background-color: var(--color-action-secondary);
+    color: white;
+}
+.post-card .archive-btn:hover,
+.post-actions .archive-btn:hover {
+    background-color: var(--color-action-secondary-hover);
+}
+
+.post-card .delete-btn,
+.post-actions .delete-btn,
+.post-card .perma-delete-btn {
+    background-color: var(--color-action-danger);
+    color: white;
+}
+.post-card .delete-btn:hover,
+.post-actions .delete-btn:hover,
+.post-card .perma-delete-btn:hover {
+    background-color: var(--color-action-danger-hover);
+}
+
+/* Save button inside the post form (explicit selector) */
+#post-form > button[type="submit"],
+#post-form button[type="submit"] {
+    background-color: var(--color-action-primary);
+    color: white;
+}
+#post-form > button[type="submit"]:hover,
+#post-form button[type="submit"]:hover {
+    background-color: var(--color-action-hover);
 }
