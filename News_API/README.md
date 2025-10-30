@@ -108,7 +108,7 @@ The system gracefully handles missing API keys, invalid inputs, and connectivity
 
 ## 🧑‍💻 Author
 
-**Adewunmi David**  
+**David Adewunmi**  
 AI/ML Robotics Software Engineer • Saiket Systems  
 📧 **pycodegenius@gmail.com**  
 🌐 [GitHub](https://github.com/davidxml)
