@@ -78,3 +78,343 @@ RESULT #10 (Published: 2025-10-28):
 
 ✅ Search completed.
 
+================================================================================
+🕓 SEARCH TIMESTAMP: 2025-10-30 17:20:18
+🔍 KEYWORD: AI
+📂 CATEGORY: technology
+🌐 LANGUAGE: yo
+🏳️ COUNTRY: us
+================================================================================
+
+⚠️ Error fetching headlines: invalid language
+
+
+🔬 ADVANCED SEARCH RESULTS (Everything Endpoint) for: 'AI'
+Total relevant articles found: 26337
+
+RESULT #1 (Published: 2025-10-29):
+  Title: Ce înseamnă pentru România retragerea parțială de trupe americane. Fost ofițer de intelligence din Armată avertizează: „Rușii vor insista că parteneriatul strategic nu funcționează, ăsta va fi narativul”
+  Snippet: În urma retragerii parțiale a trupelor americane din România, țara noastră poate...
+  URL: https://hotnews.ro/ce-inseamna-pentru-romania-retragerea-partiala-de-trupe-americane-fost-ofiter-de-intelligence-din-armata-avertizeaza-rusii-vor-insista-ca-parteneriatul-strategic-nu-functioneaza-asta-va-fi-2097627
+------------------------------------------------------------
+
+RESULT #2 (Published: 2025-10-29):
+  Title: Sound Blaster-tillverkaren lanserar ny modulär ljudhub
+  Snippet: Med AI så klart
+
+
+
+
+
+
+
+
+
+
+
+
+Creative Technology, företaget bakom den ikoniska So...
+  URL: https://feber.se/pc/sound-blaster-tillverkaren-lanserar-ny-modular-ljudhub/484889/
+------------------------------------------------------------
+
+RESULT #3 (Published: 2025-10-29):
+  Title: Υπουργικό Συμβούλιο: Όλα όσα συζητήθηκαν στη σημερινή συνεδρίαση
+  Snippet: Πρώτο θέμα συζήτησης η μείωση της γραφειοκρατίας στην οικονομική δραστηριότητα κ...
+  URL: https://www.protothema.gr/politics/article/1718325/upourgiko-sumvoulio-ola-osa-suzitithikan-sti-simerini-sunedriasi/
+------------------------------------------------------------
+
+RESULT #4 (Published: 2025-10-29):
+  Title: openhands-tools 1.0.0a5
+  Snippet: OpenHands Tools - Runtime tools for AI agents...
+  URL: https://pypi.org/project/openhands-tools/1.0.0a5/
+------------------------------------------------------------
+
+RESULT #5 (Published: 2025-10-29):
+  Title: openhands-sdk 1.0.0a5
+  Snippet: OpenHands SDK - Core functionality for building AI agents...
+  URL: https://pypi.org/project/openhands-sdk/1.0.0a5/
+------------------------------------------------------------
+
+RESULT #6 (Published: 2025-10-29):
+  Title: openhands-agent-server 1.0.0a5
+  Snippet: OpenHands Agent Server - REST/WebSocket interface for OpenHands AI Agent...
+  URL: https://pypi.org/project/openhands-agent-server/1.0.0a5/
+------------------------------------------------------------
+
+RESULT #7 (Published: 2025-10-29):
+  Title: Microsoft earnings reveal 4 major growth drivers ahead
+  Snippet: Microsoft stands at a pivotal moment as the tech giant prepares to unveil its fi...
+  URL: https://rollingout.com/2025/10/29/microsoft-earnings-4-growth-driver-ahead/
+------------------------------------------------------------
+
+RESULT #8 (Published: 2025-10-29):
+  Title: Fost instructor militar britanic, arestat la Kiev pentru spionaj în favoarea Rusiei. Este acuzat că a transmis coordonate ale pozițiilor unităților ucrainene și informații personale despre soldați, pentru a putea fi identificați, dar și că pregătea un atac cu explozibili, posibil la Odesa.
+  Snippet: Potrivit informațiilor din dosar, britanicul a ajuns în Ucraina în ianuarie 2024...
+  URL: https://www.biziday.ro/337265-2/
+------------------------------------------------------------
+
+RESULT #9 (Published: 2025-10-29):
+  Title: Coppa Italia Serie C, la Juventus NG eliminata: i rigori sorridono al Renate
+  Snippet: Eliminazione beffarda per la Juventus Next Gen, che saluta la Coppa Italia ai ri...
+  URL: https://www.tuttomercatoweb.com/serie-c/coppa-italia-serie-c-la-juventus-ng-eliminata-i-rigori-sorridono-al-renate-2162408
+------------------------------------------------------------
+
+RESULT #10 (Published: 2025-10-29):
+  Title: 矽格第三季每股賺1.68元，創近12季新高，營運漸入佳境
+  Snippet: 【財訊快報／記者李純君報導】老字號封測廠矽格(6257)營運穩健成長，在匯率穩定下，第三季歸屬母公司業主淨利為8.0億，季增139%，單季每股淨利1.68元。而...
+  URL: https://tw.stock.yahoo.com/news/%E7%9F%BD%E6%A0%BC%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%AF%8F%E8%82%A1%E8%B3%BA1-68%E5%85%83-%E5%89%B5%E8%BF%9112%E5%AD%A3%E6%96%B0%E9%AB%98-%E7%87%9F%E9%81%8B%E6%BC%B8%E5%85%A5%E4%BD%B3%E5%A2%83-001911706.html
+------------------------------------------------------------
+
+✅ Search completed.
+
+================================================================================
+🕓 SEARCH TIMESTAMP: 2025-10-30 17:21:21
+🔍 KEYWORD: AI
+📂 CATEGORY: technology
+🌐 LANGUAGE: en
+🏳️ COUNTRY: us
+================================================================================
+
+✅ Retrieved 20 of 23 top headlines.
+
+--- TOP HEADLINES ---
+
+📰 ARTICLE #1
+  Title: YouTube will let you opt out of AI upscaling on low-res videos - The Verge
+  Source: The Verge
+  Published: 2025-10-29T13:00:00Z
+  URL: https://www.theverge.com/news/808717/youtube-automatic-ai-upscaling-shopping-updates
+  Description: YouTube is aiming to improve the viewing experience on TV screens with an instant shopping tool and visual upgrades for low-resolution videos.
+------------------------------------------------------------
+
+📰 ARTICLE #2
+  Title: Grammarly rebrands to ‘Superhuman,’ launches a new AI assistant - TechCrunch
+  Source: TechCrunch
+  Published: 2025-10-29T13:00:00Z
+  URL: https://techcrunch.com/2025/10/29/grammarly-rebrands-to-superhuman-launches-a-new-ai-assistant/
+  Description: Grammarly is renaming itself as Superhuman, after acquiring Superhuman email client in July
+------------------------------------------------------------
+
+📰 ARTICLE #3
+  Title: CEO of spyware maker Memento Labs confirms one of its government customers was caught using its malware - TechCrunch
+  Source: TechCrunch
+  Published: 2025-10-29T05:00:00Z
+  URL: https://techcrunch.com/2025/10/28/ceo-of-spyware-maker-memento-labs-confirms-one-of-its-government-customers-was-caught-using-its-malware/
+  Description: Security researchers found a government hacking campaign that relies on Windows spyware developed by surveillance tech maker Memento Labs. When reached by TechCrunch, the spyware maker's chief executive blamed a government customer for getting caught.
+------------------------------------------------------------
+
+📰 ARTICLE #4
+  Title: Forget AirPods, the Galaxy Buds 3 Pro Are Selling for Pennies and Amazon Sold 30K Units - Kotaku
+  Source: Kotaku
+  Published: 2025-10-29T00:24:29Z
+  URL: https://kotaku.com/forget-airpods-the-galaxy-buds-3-pro-are-selling-for-pennies-and-amazon-sold-30k-units-2000639654
+  Description: These are premium Samsung earbuds with AI-powered noise cancellation that adapt intelligently to your surroundings.
+------------------------------------------------------------
+
+📰 ARTICLE #5
+  Title: Avatar Legends: The Fighting Game reveals new gameplay footage, Closed Alpha Test announced - EventHubs
+  Source: EventHubs
+  Published: 2025-10-28T23:33:15Z
+  URL: https://www.eventhubs.com/news/2025/oct/28/avatar-legends-gameplay-alpha/
+  Description: Late last year, it was reported that the Avatar fighting game had been canceled, but like the Avatars, the project seems to be reborn again.The recently revealed Avatar Legends: The Fighting Game is now back again to showcase a ...
+------------------------------------------------------------
+
+📰 ARTICLE #6
+  Title: YouTube will restrict more content showing ‘graphic violence’ in video games - The Verge
+  Source: The Verge
+  Published: 2025-10-28T22:14:52Z
+  URL: https://www.theverge.com/news/808545/youtube-graphic-video-game-violence-age-restriction
+  Description: YouTube’s new policy will age-restrict more content showing “scenes of torture or mass violence against non-combatants” in video games.
+------------------------------------------------------------
+
+📰 ARTICLE #7
+  Title: Apple Plans MacBook Air, iPad Air and iPad Mini With Overhauled Displays - Bloomberg.com
+  Source: Bloomberg
+  Published: 2025-10-28T20:56:27Z
+  URL: https://www.bloomberg.com/news/articles/2025-10-28/apple-plans-oled-for-ipad-mini-ipad-air-macbook-air-mini-water-resistance
+  Description: Apple Inc. is preparing major changes to its MacBook Air, iPad mini and iPad Air lines, with a plan to give the popular devices higher-end displays.
+------------------------------------------------------------
+
+📰 ARTICLE #8
+  Title: Microsoft AI Chief Says No to 'Sex Robots' as Industry Booms - Decrypt
+  Source: Decrypt
+  Published: 2025-10-28T19:14:31Z
+  URL: https://decrypt.co/346449/microsoft-ai-chief-says-no-sex-robots-industry-booms
+  Description: Microsoft's AI boss Mustafa Suleyman nixes erotic development, setting the tech giant apart from rivals exploring romantic chatbots.
+------------------------------------------------------------
+
+📰 ARTICLE #9
+  Title: ID@Xbox Showcase – October 2025: Everything Announced and Revealed - Xbox Wire
+  Source: Xbox.com
+  Published: 2025-10-28T18:34:01Z
+  URL: https://news.xbox.com/en-us/2025/10/28/id-xbox-showcase-october-2025-everything-announced-recap/
+  Description: We joined forces with IGN once again to bring you the latest ID@Xbox Showcase, a news-packed show with world premieres, release date announcements, and more. Find out everything shown inside.
+------------------------------------------------------------
+
+📰 ARTICLE #10
+  Title: Bandai Namco Is Looking To Revamp 'Shadow Labyrinth' In An Upcoming Update - Nintendo Life
+  Source: Nintendo Life
+  Published: 2025-10-28T17:30:00Z
+  URL: https://www.nintendolife.com/news/2025/10/bandai-namco-is-looking-to-revamp-shadow-labyrinth-in-an-upcoming-update
+  Description: Difficulty levels and better checkpoints in the works
+------------------------------------------------------------
+
+📰 ARTICLE #11
+  Title: NASCAR and Night launch NASCAR 25 Creator Series in celebration of NASCAR 25 - NASCAR.com
+  Source: NASCAR
+  Published: 2025-10-28T17:05:44Z
+  URL: https://www.nascar.com/news-media/2025/10/28/nascar-and-night-launch-nascar-25-creator-series-in-celebration-of-nascar-25/
+  Description: NASCAR and Night, a next-gen media and entertainment company, launch NASCAR 25 Creator Series in celebration of NASCAR 25.
+------------------------------------------------------------
+
+📰 ARTICLE #12
+  Title: GDC Festival of Gaming: The industry reacts to the controversial rebrand - GamesIndustry.biz
+  Source: GamesIndustry.biz
+  Published: 2025-10-28T15:31:59Z
+  URL: https://www.gamesindustry.biz/gdc-festival-of-gaming-the-industry-reacts-to-the-controversial-rebrand
+  Description: This week, the GDC organisers finally explained what they mean by a "Festival of Gaming." But is it what the industry wants?
+------------------------------------------------------------
+
+📰 ARTICLE #13
+  Title: Adobe and Google Cloud Expand Strategic Partnership to Advance the Future of Creative AI - Adobe Newsroom
+  Source: Adobe.com
+  Published: 2025-10-28T14:35:08Z
+  URL: https://news.adobe.com/news/2025/10/adobe-max-2025-google-cloud
+  Description: At Adobe MAX, Adobe and Google Cloud announced an expanded partnership to deliver the next generation of AI-powered creative technologies, bringing together Adobe’s decades of creative expertise with Google’s advanced AI models.
+------------------------------------------------------------
+
+📰 ARTICLE #14
+  Title: How OpenAI’s Sora is Evolving Like TikTok - The Information
+  Source: The Information
+  Published: 2025-10-28T14:10:00Z
+  URL: https://www.theinformation.com/articles/openais-sora-evolving-like-tiktok
+  Description: When OpenAI released its Sora video app last month, it seemed like an attempt to develop a TikTok-like viral video service with artificial intelligence at its core. And in some ways, usage of Sora has echoes in how TikTok is used.In a recent all-hands, OpenAI…
+------------------------------------------------------------
+
+📰 ARTICLE #15
+  Title: Both real-life and lab tests suggest iPhone Air battery lasts a typical day - 9to5Mac
+  Source: 9to5Mac
+  Published: 2025-10-28T14:05:00Z
+  URL: https://9to5mac.com/2025/10/28/both-real-life-and-lab-tests-suggest-iphone-air-battery-lasts-a-typical-day/
+  Description: One of the key compromises with the iPhone Air is a smaller battery, but a combination of real-life usage and...
+------------------------------------------------------------
+
+📰 ARTICLE #16
+  Title: Midnight 16GB M3 MacBook Air now $659 off the orig. price (Open-box, 1-yr. warranty) - 9to5Toys
+  Source: 9to5Toys
+  Published: 2025-10-28T12:23:00Z
+  URL: http://9to5toys.com/2025/10/28/midnight-16gb-m3-macbook-air-deal/
+  Description: We have a featured a couple notable deals on the now previous-gen M3 MacBook Air as of late for folks...
+------------------------------------------------------------
+
+📰 ARTICLE #17
+  Title: See a colossal 'X' and 'V' appear on the moon after sunset tonight - Space
+  Source: Space.com
+  Published: 2025-10-28T12:00:00Z
+  URL: https://www.space.com/stargazing/see-a-colossal-x-and-v-appear-on-the-moon-after-sunset-tonight
+  Description: Turn your telescope on the moon at sunset on Oct. 28 to see a colossal "X" and "V" form on the lunar surface as sunlight picks out broken terrain along the terminator.
+------------------------------------------------------------
+
+📰 ARTICLE #18
+  Title: Halo: Campaign Evolved prequel missions tell an entirely new story — bringing new enemies, environments, and more - Windows Central
+  Source: Windows Central
+  Published: 2025-10-28T11:06:49Z
+  URL: https://www.windowscentral.com/gaming/xbox/halo-campaign-evolved-prequel-missions-entirely-new-story
+  Description: Halo Studios confirms that the three prequel missions included in Halo: Campaign Evolved are telling a new story, not something that's been seen before.
+------------------------------------------------------------
+
+📰 ARTICLE #19
+  Title: Samsung, Google unveil $1,799 device that aims to replace everything - TheStreet
+  Source: TheStreet
+  Published: 2025-10-28T00:07:00Z
+  URL: https://www.thestreet.com/entertainment/samsung-google-unveil-1799-device-that-aims-to-replace-everything
+  Description: Samsung and Google’s Galaxy XR headset blends AI, apps, and immersive computing in one sleek device.
+------------------------------------------------------------
+
+📰 ARTICLE #20
+  Title: Microsoft WSUS attacks hit 'multiple' orgs, Google warns - theregister.com
+  Source: Theregister.com
+  Published: 2025-10-27T23:54:00Z
+  URL: https://www.theregister.com/2025/10/27/microsoft_wsus_attacks_multiple_orgs/
+  Description: : If at first you don’t succeed, patch and patch again
+------------------------------------------------------------
+
+
+🔬 ADVANCED SEARCH RESULTS (Everything Endpoint) for: 'AI'
+Total relevant articles found: 26334
+
+RESULT #1 (Published: 2025-10-29):
+  Title: Apple Now Spends Over $8 Million Lobbying the EU Annually
+  Snippet: Apple spent more money lobbying EU officials in 2025 than in any previous year, ...
+  URL: https://www.macrumors.com/2025/10/29/apple-now-spends-8-million-lobbying-eu/
+------------------------------------------------------------
+
+RESULT #2 (Published: 2025-10-29):
+  Title: Strage nel Sannio, figlia ferita lascia la rianimazione
+  Snippet: Antonia Ocone, la ragazza ridotta in fin di vita dal padre il 30 settembre scors...
+  URL: https://www.ansa.it/campania/notizie/2025/10/29/strage-nel-sannio-figlia-ferita-lascia-la-rianimazione_723c4985-f3bc-4eac-9a27-c91e7c949d92.html
+------------------------------------------------------------
+
+RESULT #3 (Published: 2025-10-29):
+  Title: Il campionato provinciale di padel diventa anche femminile
+  Snippet: Giunto alla quarta edizione, il campionato provinciale di padel maschile ideato ...
+  URL: https://www.lastampa.it/cuneo/2025/10/29/news/il_campionato_provinciale_di_padel_diventa_anche_femminile-15373056/
+------------------------------------------------------------
+
+RESULT #4 (Published: 2025-10-29):
+  Title: Ce înseamnă pentru România retragerea parțială de trupe americane. Fost ofițer de intelligence din Armată avertizează: „Rușii vor insista că parteneriatul strategic nu funcționează, ăsta va fi narativul”
+  Snippet: În urma retragerii parțiale a trupelor americane din România, țara noastră poate...
+  URL: https://hotnews.ro/ce-inseamna-pentru-romania-retragerea-partiala-de-trupe-americane-fost-ofiter-de-intelligence-din-armata-avertizeaza-rusii-vor-insista-ca-parteneriatul-strategic-nu-functioneaza-asta-va-fi-2097627
+------------------------------------------------------------
+
+RESULT #5 (Published: 2025-10-29):
+  Title: Sound Blaster-tillverkaren lanserar ny modulär ljudhub
+  Snippet: Med AI så klart
+
+
+
+
+
+
+
+
+
+
+
+
+Creative Technology, företaget bakom den ikoniska So...
+  URL: https://feber.se/pc/sound-blaster-tillverkaren-lanserar-ny-modular-ljudhub/484889/
+------------------------------------------------------------
+
+RESULT #6 (Published: 2025-10-29):
+  Title: Υπουργικό Συμβούλιο: Όλα όσα συζητήθηκαν στη σημερινή συνεδρίαση
+  Snippet: Πρώτο θέμα συζήτησης η μείωση της γραφειοκρατίας στην οικονομική δραστηριότητα κ...
+  URL: https://www.protothema.gr/politics/article/1718325/upourgiko-sumvoulio-ola-osa-suzitithikan-sti-simerini-sunedriasi/
+------------------------------------------------------------
+
+RESULT #7 (Published: 2025-10-29):
+  Title: openhands-tools 1.0.0a5
+  Snippet: OpenHands Tools - Runtime tools for AI agents...
+  URL: https://pypi.org/project/openhands-tools/1.0.0a5/
+------------------------------------------------------------
+
+RESULT #8 (Published: 2025-10-29):
+  Title: openhands-sdk 1.0.0a5
+  Snippet: OpenHands SDK - Core functionality for building AI agents...
+  URL: https://pypi.org/project/openhands-sdk/1.0.0a5/
+------------------------------------------------------------
+
+RESULT #9 (Published: 2025-10-29):
+  Title: openhands-agent-server 1.0.0a5
+  Snippet: OpenHands Agent Server - REST/WebSocket interface for OpenHands AI Agent...
+  URL: https://pypi.org/project/openhands-agent-server/1.0.0a5/
+------------------------------------------------------------
+
+RESULT #10 (Published: 2025-10-29):
+  Title: Microsoft earnings reveal 4 major growth drivers ahead
+  Snippet: Microsoft stands at a pivotal moment as the tech giant prepares to unveil its fi...
+  URL: https://rollingout.com/2025/10/29/microsoft-earnings-4-growth-driver-ahead/
+------------------------------------------------------------
+
+✅ Search completed.
+
