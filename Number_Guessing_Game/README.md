@@ -13,7 +13,7 @@
 ---
 
 The **Number Guessing Game** is a simple yet engaging Python project developed during my internship at **Saiket Systems**. It’s a terminal-based guessing game that challenges players to find a randomly chosen number within a specific range.  
-The game demonstrates the use of **object-oriented programming**, **modular design**, and **robust error handling** — all wrapped in a fun and user-friendly command-line experience.
+The game demonstrates the use of **object-oriented programming**, **modular design**, and **robust error handling** and  all wrapped in a fun and user-friendly command-line experience.
 
 ---
 
