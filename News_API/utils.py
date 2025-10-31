@@ -53,7 +53,7 @@ def get_user_parameters():
 
     # Country code standardization (must be uppercase for News API)
     country = input(
-        "🏳️ Country code (NG, US, FR, etc. - use **uppercase** for best results): "
+        "🏳️ Country code (ng, us, fr, etc. - use **lowercase** for best results): "
     ).strip().lower()
 
     return keyword, category, language, country
